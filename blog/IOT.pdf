@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://www.practice-labs.com/authenticated/vNext/vn-print-content.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="./IOT_files/print-styles.css" rel="stylesheet">
+    <script src="./IOT_files/jquery.min.js.download"></script>
+    <script src="./IOT_files/jspdf.js.download"></script>
+    <script src="./IOT_files/from_html.js.download"></script>
+    <script src="./IOT_files/addimage.js.download"></script>
+    <script src="./IOT_files/filesaver.js.download"></script>
+    <script src="./IOT_files/pl.js.download"></script>
+</head>
+<body>
+    <form method="post" action="https://www.practice-labs.com/authenticated/vNext/vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="hC/Z5NutkOGMftSTbgXQbABjxaKT3+lTu/o65D/c4GuzIJxs0lrxqLqzINmJdvAwUrfezpVZi8J1wTnGPGEutbBBpIrd1kFv3P+5ibcz1po=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>Practice Labs - Ethical Hacker v11</h1>
+                <h2>Compromising IoT &amp; OT platforms</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - IoT Concepts</li><li>Exercise 2 - IoT Device Exploitation and Prevention</li><li>Exercise 3 - OT Concepts, Attacks, and Countermeasures</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m20-0"><b>Introduction</b></h2>
+<div class="cn-metadata"><div>IoT</div>
+<div>OT</div>
+<div>Vulnerabilities</div>
+<div>Communication Models</div>
+<div>Attacks</div>
+<div>Methodologies</div>
+</div>
+<span class="atom-code hidden">9beca326-b493-4b0e-b3dc-d7dfb77df3c9</span>
+<p id="cn-m20-9">Welcome to the <b>Compromising IoT &amp; OT platforms </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+<p id="cn-m20-13">In this module, you will complete the following exercises:</p>
+<ul id="cn-m20-14">
+<li id="cn-m20-14">Exercise 1 - IoT Concepts</li>
+<li id="cn-m20-15">Exercise 2 - IoT Device Exploitation and Prevention</li>
+<li id="cn-m20-16">Exercise 3 - OT Concepts, Attacks, and Countermeasures</li>
+</ul>
+<p id="cn-m20-17">After completing this module, you will have further knowledge of:</p>
+<ul id="cn-m20-18">
+<li id="cn-m20-18">IoT Concepts</li>
+<li id="cn-m20-19">IoT Technology Components</li>
+<li id="cn-m20-20">IoT Architecture</li>
+<li id="cn-m20-21">IoT Use Cases</li>
+<li id="cn-m20-22">IoT Operating Systems</li>
+<li id="cn-m20-23">IoT Communication Models IoT Security Issues</li>
+<li id="cn-m20-24">OWASP Top 10 IoT Vulnerabilities</li>
+<li id="cn-m20-25">OWASP IoT Attack Surfaces</li>
+<li id="cn-m20-26">IoT Attacks</li>
+<li id="cn-m20-27">IoT Hacking Methodology and Tools</li>
+<li id="cn-m20-28">IoT Countermeasures Challenges of OT</li>
+<li id="cn-m20-29">OT Vulnerabilities</li>
+<li id="cn-m20-30">OT Attacks</li>
+<li id="cn-m20-31">OT Hacking Methodology and Tools</li>
+<li id="cn-m20-32">OT Countermeasures</li>
+</ul>
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+<p id="cn-m20-34">It will take approximately <b>30 minutes </b>to complete this lab.</p>
+<span class="atom-code hidden">642d9b6c-5119-43ce-ae43-ef817a483854</span>
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+<p id="cn-m20-38">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+<span class="cn-alert" id="cn-m20-39">Click <b>Next </b>to view the Lab topology used in this module.</span>
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m20-41"><b>Lab Topology</b></h2>
+<p id="cn-m20-42">This module contains supporting materials for <b>Ethical Hacker v11</b>.</p>
+<span class="atom-code hidden">9282b519-cfa2-4f31-ada0-935ed1a8efec</span>
+<span class="cn-alert" id="cn-m20-45">Click <b>Next </b>to proceed to the first exercise.</span>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m20-46"><b>Exercise 1 - IoT Concepts</b></h2>
+<p id="cn-m20-47">The term IoT stands for the Internet of Things. IoT allows a device to be accessible on the Internet, such as a mobile device. IoT devices can communicate with each other and gather information that can be used for analysis.</p>
+<p id="cn-m20-48">For example, a smartwatch could track the number of hours of sleep and the number of steps a person takes. This data can then be analyzed by another IoT device, such as a mobile device, displaying the average number of hours of sleep and daily steps.</p>
+<p id="cn-m20-49">More recently, IoT devices have been used for different purposes. These include:</p>
+<ul id="cn-m20-50">
+<li id="cn-m20-50">Smart thermostats</li>
+<li id="cn-m20-51">Medical devices</li>
+<li id="cn-m20-52">Connected cars</li>
+<li id="cn-m20-53">Activity trackers</li>
+<li id="cn-m20-54">Smart refrigerators</li>
+<li id="cn-m20-55">Parking sensors</li>
+<li id="cn-m20-56">Medical sensors</li>
+<li id="cn-m20-57">Smart security systems</li>
+</ul>
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+<p id="cn-m20-59">After completing this exercise, you will have further knowledge of:</p>
+<ul id="cn-m20-60">
+<li id="cn-m20-60">IoT Concepts</li>
+<li id="cn-m20-61">IoT Technology Components</li>
+<li id="cn-m20-62">IoT Architecture</li>
+<li id="cn-m20-63">IoT Use Cases</li>
+<li id="cn-m20-64">IoT Operating Systems</li>
+<li id="cn-m20-65">IoT Communication Models</li>
+</ul>
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+<p id="cn-m20-67">This exercise contains supporting materials for <b>Ethical Hacker v11</b>.</p>
+<span class="atom-code hidden">9282b519-cfa2-4f31-ada0-935ed1a8efec</span>
+<h3 id="cn-m20-70"><b>IoT Concepts</b></h3>
+<p id="cn-m20-71">Each IoT device has an IP address that can be used for communication with the other IoT devices and remote monitoring and controlling. IoT devices use various sensors, such as:</p>
+<ul id="cn-m20-72">
+<li id="cn-m20-72">Temperature</li>
+<li id="cn-m20-73">Humidity</li>
+<li id="cn-m20-74">Acceleration</li>
+<li id="cn-m20-75">Gyro</li>
+<li id="cn-m20-76">Accelerometers</li>
+</ul>
+<p id="cn-m20-77">You can virtually turn computing device with the capability of autonomous computing into a smart device.</p>
+<p id="cn-m20-78">At present, IoT devices are being used across various industries, such as consumer electronics, travel, energy, healthcare, agriculture, facility automation, and security. For example, several housing complexes and office complexes use smart lighting. Lights in low traffic areas such as storerooms can be dimmed or turned off until traffic increases and then the lights will turn on or increase in brightness. This is smart facility automation.</p>
+<h3 id="cn-m20-79"><b>IoT Technology Components</b></h3>
+<p id="cn-m20-80">Different components in IoT technology work together to achieve a specific objective. These components are:</p>
+<ul id="cn-m20-81">
+<li id="cn-m20-81"><b>Sensors</b>: Devices that collect certain dataq such as temperature, heart rate etc. These devices will communicate this information to storage or analysis devices.</li>
+<li id="cn-m20-82"><b>IoT Gateway</b>: The device that allows communication between sensors and the remote control, storage or analysis devices on the LAN / Cloud.</li>
+<li id="cn-m20-83"><b>Storage</b>: A system that stores the data received from the IoT Gateway. It is typically a cloud location.</li>
+<li id="cn-m20-84"><b>Remote Control</b>: An app on a mobile device or a web site that allows a user uses to interact with an IoT device. A user can achieve different tasks, such as viewing and retrieving historical data.</li>
+</ul>
+<h3 id="cn-m20-85"><b>IoT Architecture</b></h3>
+<p id="cn-m20-86">IoT architecture comprises five different layers where each layer has a distinct function to perform. The Edge Technology Layer is the topmost layer, followed by the Access Gateway, Internet, Middleware and Application Layers.</p>
+<span class="atom-code hidden">2fa0dc41-5618-4bd1-9b1c-211a77da0a8d</span>
+<p id="cn-m20-89">Figure 1.1: IoT Architecture, showing the Edge Technology, Access Gateway, Internet, Middleware and Application Layers</p>
+<ul id="cn-m20-90">
+<li id="cn-m20-90"><b>Edge Technology Layer</b>: Hardware components exist on this layer. Hardware can vary and can include things such as sensors and RFID tags. A device that has these hardware components is also included in this layer. Several tasks, such as data collection and device connectivity, are performed at this layer.</li>
+<li id="cn-m20-91"><b>Access Gateway Layer</b>: Data handling takes place on this layer. Other tasks that are performed on this layer are message identification, message routing, and subscribing.</li>
+<li id="cn-m20-92"><b>Internet Layer</b>: This layer is responsible for enabling communication between two devices and also enables device-to-gateway communication. It can be device-to-device communication or device-to-cloud.</li>
+<li id="cn-m20-93"><b>Middleware Layer</b>: This layer is responsible for data-related tasks, such as aggregation and filtering. It is also responsible for access control.</li>
+<li id="cn-m20-94"><b>Application Layer</b>: This layer is responsible for connecting with users to deliver services.</li>
+</ul>
+<h3 id="cn-m20-95"><b>IoT Use Cases</b></h3>
+<p id="cn-m20-96">IoT, as a technology, can be used in different places. It can be used in televisions and then even in fighter jets. Let’s look at some of the possible use cases of IoT across different domains:</p>
+<span class="atom-code hidden">30a7bdce-e5db-4a50-b34a-9033119fb254</span>
+<h3 id="cn-m20-99"><b>IoT Operating Systems</b></h3>
+<p id="cn-m20-100">An IoT operating system is installed on a device to function. It is like an embedded operating system within a device to work with system resources. It can be found in several IoT devices, such as digital cameras, elevators, ATMs, and cars.</p>
+<p id="cn-m20-101">Some of the key IoT operating systems are:</p>
+<ul id="cn-m20-102">
+<li id="cn-m20-102">Ubuntu Core</li>
+<li id="cn-m20-103">RIOT</li>
+<li id="cn-m20-104">Windows 10 IoT</li>
+<li id="cn-m20-105">Amazon FreeRTOS</li>
+<li id="cn-m20-106">Contiki</li>
+<li id="cn-m20-107">Fuchsia</li>
+<li id="cn-m20-108">ARM mbed OS</li>
+<li id="cn-m20-109">Zephyr</li>
+<li id="cn-m20-110">Nucleus RTOS</li>
+<li id="cn-m20-111">Integrity RTOS</li>
+<li id="cn-m20-112">NuttX RTOS</li>
+</ul>
+<h3 id="cn-m20-113"><b>IoT Communication Models</b></h3>
+<p id="cn-m20-114">IoT devices can communicate in different ways. It can be direct device-to-device communication or via a device connected with a cloud to store its data. Let’s look at the different communication models used with IoT devices.</p>
+<ul id="cn-m20-115">
+<li id="cn-m20-115"><b>Device-to-Device</b>: in this communication model, two devices directly interact. These devices could be using different protocols such as ZigBee or Bluetooth. Examples can be wearable devices and CCTV cameras.</li>
+<li id="cn-m20-116"><b>Device-to-Cloud</b>: IoT devices directly interact with the cloud to store data and receive commands. For example, if you need to inform the air conditioner to start at 5 PM, you could use a mobile app to send the commands through the cloud, not directly to the air conditioner.</li>
+<li id="cn-m20-117"><b>Device-to-Gateway</b>: in this communication model, a mediator (such as a mobile app) plays the role of a gateway. Commands are passed to the IoT device through a mobile app.</li>
+<li id="cn-m20-118"><b>Backend Data Sharing</b>: in this communication model, the IoT device stores data in the cloud, the backend. This model works in the data-sharing model, which involves third parties that use the data. Third parties may use the data for analysis, research, or other purposes.</li>
+</ul>
+<span class="atom-code hidden">e7877d3b-ca13-4b0b-b62b-ab0180647a0b</span>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m20-121"><b>Exercise 2 - IoT Device Exploitation and Prevention</b></h2>
+<p id="cn-m20-122">IoT is a new technology that has surfaced and expanded greatly in recent years, and it is predicted that there are 35-40 billion IoT devices connected to the Internet as of the time of writing.</p>
+<p id="cn-m20-123">With such a large number of devices, the number of attacks has also risen, and it is crucial to use preventive measures for protection.</p>
+<p id="cn-m20-124">Despite their popularity and extensive use, the security of IoT devices remains a concern. Some of the key issues are:</p>
+<ul id="cn-m20-125">
+<li id="cn-m20-125">Hardware hacking via exposed ports</li>
+<li id="cn-m20-126">Extracting information from flash memory</li>
+<li id="cn-m20-127">Access to the root terminal using exposed ports</li>
+<li id="cn-m20-128">Use of vulnerable Application Programming Interface (API)</li>
+<li id="cn-m20-129">Insecure authentication and authorization</li>
+<li id="cn-m20-130">Web interface vulnerabilities</li>
+<li id="cn-m20-131">Hardcoded credentials</li>
+<li id="cn-m20-132">Unnecessary and insecure services running</li>
+<li id="cn-m20-133">Sniffing information from protocols, such as BLE and ZigBee</li>
+</ul>
+<p id="cn-m20-134">In this exercise, you will learn about IoT exploitation and prevention methods.</p>
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+<p id="cn-m20-136">After completing this exercise, you will know about:</p>
+<ul id="cn-m20-137">
+<li id="cn-m20-137">IoT Security Issues</li>
+<li id="cn-m20-138">OWASP Top 10 IoT Vulnerabilities</li>
+<li id="cn-m20-139">OWASP IoT Attack Surfaces</li>
+<li id="cn-m20-140">IoT Attacks</li>
+<li id="cn-m20-141">IoT Hacking Methodology and Tools</li>
+<li id="cn-m20-142">IoT Countermeasures</li>
+</ul>
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+<p id="cn-m20-144">This exercise contains supporting materials for <b>Ethical Hacker v11</b>.</p>
+<span class="atom-code hidden">9282b519-cfa2-4f31-ada0-935ed1a8efec</span>
+<h3 id="cn-m20-147"><b>IoT Security Issues</b></h3>
+<p id="cn-m20-148">IoT devices, like any other computing device, have vulnerabilities that can be exploited. It could be default hard-coded credentials or even cleartext communication. These issues could make organizatoins vulenrablt to attacks.</p>
+<p id="cn-m20-149">Let’s look at key IoT security issues at different levels within the IoT ecosystem.</p>
+<ul id="cn-m20-150">
+<li id="cn-m20-150"><b>Application</b>: default passwords, no security updates</li>
+<li id="cn-m20-151"><b>Network</b>: no or improper communication data encryption, no security updates</li>
+<li id="cn-m20-152"><b>Mobile</b>: no or improper communication data encryption, insecure APIs, data-at-rest encryption, weak authentication mechanism</li>
+<li id="cn-m20-153"><b>Cloud</b>: weak authentication mechanism, no encryption for data-at-rest or data-in-transit</li>
+</ul>
+<h3 id="cn-m20-154"><b>OWASP Top 10 IoT Vulnerabilities</b></h3>
+<span class="atom-code hidden">652de94b-bb59-4ca3-81e9-4fe0de25675f</span>
+<h3 id="cn-m20-157"><b>OWASP IoT Attack Surfaces</b></h3>
+<p id="cn-m20-158">IoT devices are considered vulnerable due to a large attack surface that expands to communicate from the device to the network.</p>
+<p id="cn-m20-159">Some attack surfaces include:</p>
+<span class="atom-code hidden">d595dffe-f53d-44c2-a5a5-f5794d60a3ca</span>
+<h3 id="cn-m20-162"><b>IoT Attacks</b></h3>
+<p id="cn-m20-163">IoT devices are prone to several types of attacks. Some of the key attacks are:</p>
+<ul id="cn-m20-164">
+<li id="cn-m20-164"><b>DoS/DDoS</b>: is performed by hacking IoT devices and using them as bots.</li>
+<li id="cn-m20-165"><b>Rolling Code</b>: is performed by sniffing traffic intended from an IoT device to a vehicle. An attacker extracts code from the traffic and steals the vehicle.</li>
+<li id="cn-m20-166"><b>BlueBorne</b>: is an attack in which an infected device connects to the Bluetooth-enabled devices and infects them.</li>
+<li id="cn-m20-167"><b>Jamming</b>: in this attack, an attacker jams the signal between two IoT devices, which prevents their communication.</li>
+<li id="cn-m20-168"><b>Backdoor</b>: in this attack, an attacker converts an IoT device as a backdoor to get into a connected network.</li>
+<li id="cn-m20-169"><b>SQL Injection</b>: an attacker exploits SQL vulnerabilities in a mobile app. After exploiting these vulnerabilities, an attacker can also control connected IoT devices.</li>
+<li id="cn-m20-170"><b>Fault Injection</b>: an attacker introduces a fault behavior to an IoT device to exploit faults. An attacker can control the IoT device’s security when these faults are exploited.</li>
+<li id="cn-m20-171"><b>SDR-based</b>: an attacker captures the information floating on the IoT device and sends spam messages to IoT devices.</li>
+<li id="cn-m20-172"><b>Network Pivoting</b>: an attacker exploits an IoT device and then, using this device, connects to a server. After connecting, the attacker pivots to the other servers and devices on the network.</li>
+<li id="cn-m20-173"><b>Telnet Access</b>: an IoT device may have an open Telnet port. An attacker could exploit this port and then access stored data.</li>
+<li id="cn-m20-174"><b>Sybil Attack</b>: an attacker creates forged identities in a peer-to-peer network to simulate heavy congestion.</li>
+<li id="cn-m20-175"><b>Vulnerability Exploitation</b>: an attacker exploits open vulnerabilities on an IoT device.</li>
+<li id="cn-m20-176"><b>Man-in-the-Middle (MITM</b>): an attacker intercepts traffic between two IoT devices.</li>
+<li id="cn-m20-177"><b>Replaced Device</b>: an attacker replaces a legitimate IoT device with a malicious device.</li>
+<li id="cn-m20-178"><b>Replay</b>: an attacker intercepts messages using MITM and then plays the intercepted messages to legitimate devices, which eventually becomes a DoS attack.</li>
+</ul>
+<h3 id="cn-m20-179"><b>IoT Hacking Methodology and Tools</b></h3>
+<p id="cn-m20-180">IoT hacking methodology is similar to any web attacking methodology, and an attacker would perform the same steps as they would perform in a web attack. For example, the attack would start with the Information Gathering phase, and proceed with Vulnerability Scanning, Launching Attacks, Gaining and Maintaining Access phases.</p>
+<span class="atom-code hidden">efc59131-f678-4579-b531-4f36e8bc0ba3</span>
+<p id="cn-m20-183">Figure 2.1: Diagram showing IoT Hacking Methodology, including Information Gathering, Vulnerability Scanning, Launching Attacks and Gaining / Maintaining Access phases.</p>
+<span class="atom-code hidden">c76fda6f-cb65-4e23-b1a1-008f0640bf99</span>
+<h3 id="cn-m20-186"><b>IoT Countermeasures</b></h3>
+<p id="cn-m20-187">Just as with a typical system or mobile device, you also need to protect IoT devices. There are several methods to do this, such as:</p>
+<ul id="cn-m20-188">
+<li id="cn-m20-188">Update firmware as and when required</li>
+<li id="cn-m20-189">Block unnecessary open ports</li>
+<li id="cn-m20-190">Disable Telnet, UPnP, and other vulnerable services</li>
+<li id="cn-m20-191">Disable guest and demo accounts</li>
+<li id="cn-m20-192">Use encrypted communication and use PKI if possible</li>
+<li id="cn-m20-193">Use a strong password</li>
+<li id="cn-m20-194">Use two-factor authentication</li>
+<li id="cn-m20-195">Use drive encryption</li>
+<li id="cn-m20-196">Configure user account lockout</li>
+<li id="cn-m20-197">Perform periodic device assessment</li>
+<li id="cn-m20-198">Use the secure password recovery</li>
+<li id="cn-m20-199">Configure two-factor authentication</li>
+<li id="cn-m20-200">Use secure coding practices to develop IoT applications</li>
+<li id="cn-m20-201">Implement Intrusion Prevention System (IPS) and Intrusion Detection System (IDS)</li>
+<li id="cn-m20-202">Ensure physical security of IoT devices</li>
+<li id="cn-m20-203">Isolate IoT devices on a separate network</li>
+</ul>
+<span class="cn-quote" id="cn-m20-204"><b><i>Note</i></b><i>: This is not an exhaustive list. There can be more methods that can be applied. However, some methods will depend on network architecture. </i></span>
+<span class="atom-code hidden">e7877d3b-ca13-4b0b-b62b-ab0180647a0b</span>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m20-209"><b>Exercise 3 - OT Concepts, Attacks, and Countermeasures</b></h2>
+<p id="cn-m20-210">Operational Technology (OT) comprises hardware and software used to manage and monitor industrial operations. OT includes various components in an industrial environment, such as switches, systems, lights, CCTV cameras, cooling and heating systems. For example, a system runs a specific application to monitor a specific set of machines.</p>
+<p id="cn-m20-211">In this exercise, you will learn about OT attacks, hacking methodology, hacking tools, and countermeasures.</p>
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+<p id="cn-m20-213">After completing this exercise, you will know about:</p>
+<ul id="cn-m20-214">
+<li id="cn-m20-214">Challenges of OT</li>
+<li id="cn-m20-215">OT Vulnerabilities</li>
+<li id="cn-m20-216">OT Attacks</li>
+<li id="cn-m20-217">OT Hacking Methodology and Tools</li>
+<li id="cn-m20-218">OT Countermeasures</li>
+</ul>
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+<p id="cn-m20-220">This exercise contains supporting materials for <b>Ethical Hacker v11</b>.</p>
+<span class="atom-code hidden">9282b519-cfa2-4f31-ada0-935ed1a8efec</span>
+<h3 id="cn-m20-223"><b>Challenges of OT</b></h3>
+<p id="cn-m20-224">There can be various challenges of OT. For example, an OT device or system may not be updated, or the update may not be available. Some key challenges are as follows:</p>
+<ul id="cn-m20-225">
+<li id="cn-m20-225"><b>Lack of Visibility</b>: Organizations do not pay attention to security requirements necessary to safeguard their OT infrastructure. Without the proper security in place, it is difficult to have clear visibility and determine the risks beforehand. For example, if an organization cannot determine the risks or perform a risk assessment, the organization cannot be ready to handle risks proactively.</li>
+<li id="cn-m20-226"><b>Plain-text Password</b>: OT networks that include various components may be using simple and plain-text passwords. Several organizations do not upgrade industrial machines managed by legacy applications. These applications may or may not use complex passwords. Historically, most applications used plain-text passwords. If an organization uses a legacy application, it may be using a plain-text password.</li>
+<li id="cn-m20-227"><b>Network Complexity</b>: An OT network consists of many devices, making it complex. It is not easy to define security requirements for a complex network. For example, a sensor may require a different level of security than a management application system.</li>
+<li id="cn-m20-228"><b>Legacy Technology</b>: OT technology is expansive and, therefore, not regularly updated. For example, a machine may have a sensor that is a few years old. Therefore, the communication protocol that it uses may also be outdated.</li>
+<li id="cn-m20-229"><b>Outdated or no Antivirus</b>: OT infrastructure is typically outdated and, therefore, may be running an outdated or no antivirus. It makes the entire OT infrastructure vulnerable.</li>
+<li id="cn-m20-230"><b>Lack of Skills</b>: Organizations need skilled staff to manage an OT environment. However, since this is a specialized environment, not the typical IT environment, it is not easy to find a skilled workforce.</li>
+<li id="cn-m20-231"><b>New Security Threats</b>: New security threats emerge daily. The OT infrastructure may not be regularly updated and, therefore, is more vulnerable to new security threats.</li>
+<li id="cn-m20-232"><b>Insecure Connectivity</b>: OT networks may be using insecure wireless connectivity. For example, if the wireless network uses a weak wireless protocol, it is prone to a MITM attack.</li>
+<li id="cn-m20-233"><b>Rogue Devices</b>: An attacker may install a rogue device within an OT network, which can further be used for initiating an attack.</li>
+<li id="cn-m20-234"><b>Proprietary Software</b>: Several applications and hardware are proprietary in an OT environment. This causes the vendor lock-in situation. These devices are not easy to upgrade or update.</li>
+<li id="cn-m20-235"><b>Communication Protocol Vulnerabilities</b>: Some of the key communication protocols, such as Modbus and Profinet, are used for monitoring and maintaining various components within an OT network. However, these protocols are vulnerable. For example, they lack authentication.</li>
+<li id="cn-m20-236"><b>Remote Access</b>: OT devices and systems are accessed using different protocols, such as VNC, SSH, and RDP. The attacker can exploit the systems on the OT network after gaining remote access.</li>
+</ul>
+<h3 id="cn-m20-237"><b>OT Vulnerabilities</b></h3>
+<p id="cn-m20-238">OT networks are now interconnected with IT networks. Due to this, the attack surface increases and OT networks become vulnerable. Even though OT networks should be isolated, they often are not.</p>
+<p id="cn-m20-239">For example, an attack on an IT network can eventually provide access to the OT network through pivoting. Similarly, vulnerabilities in OT networks can also increase the attack surface. Let’s look at some of the common vulnerabilities in OT networks.</p>
+<ul id="cn-m20-240">
+<li id="cn-m20-240">Due to the maintenance and management requirements, OT networks are mostly connected to the Internet. This is required for the third-party vendors to perform regular maintenance. However, OT networks are not protected with sufficient security controls. Because of the direct connectivity to the Internet, OT systems are prone to malware and Denial-of-Service (DoS) attacks.</li>
+<li id="cn-m20-241">Passwords can be brute-forced to gain access to  OT systems. It could also be possible that the default credentials are used for accessing OT systems. It is not difficult for the attacker to guess those weak passwords.</li>
+<li id="cn-m20-242">Several organizations use jump boxes to allow access to OT networks. If there are vulnerabilities in jump boxes, an attacker can exploit them and access OT networks.</li>
+<li id="cn-m20-243">It is not easy for organizations to keep up with the latest technology or update OT networks regularly. Such a limitation favors an attacker to discover an unpatched vulnerability and exploit it.</li>
+<li id="cn-m20-244">Even though the main and OT networks are segregated, they need to have a firewall in between to allow access to either network. If a firewall is not properly configured or excess permissions are allowed, it is easy for an experienced attacker to access the OT network.</li>
+<li id="cn-m20-245">It can be possible that an OT management console is installed on a system on a main network. If an attacker can penetrate the main network, then the management console can also control the OT network.</li>
+<li id="cn-m20-246">An organization may have a flat network that contains OT and production systems on a single network. This allows an attacker to hack into one network and access both systems.</li>
+<li id="cn-m20-247">If OT systems are not using updated wireless networks, an attacker can sniff the traffic.</li>
+</ul>
+<h3 id="cn-m20-248"><b>OT Attacks</b></h3>
+<p id="cn-m20-249">OT networks can be prone to several attacks. Some attacks can be due to existing vulnerabilities, and some can be due to misconfigurations. Let’s look at some possible attack types:</p>
+<ul id="cn-m20-250">
+<li id="cn-m20-250"><b>Zero-day Vulnerabilities</b>: an attacker may discover a zero-day vulnerability and exploit it to gain administrative access to an OT network.</li>
+<li id="cn-m20-251"><b>Unpatched Vulnerabilities</b>: is quite common for OT networks to remain unpatched - either patches or updates were never applied or, in some cases, even released by vendors. Attackers look out for such unpatched vulnerabilities. By exploiting these vulnerabilities, the attackers may disrupt the OT network functionality or plant malware into the network.</li>
+<li id="cn-m20-252"><b>Data Theft or Leakage</b>: an attacker can steal data or send it to the command-and-control center after exploiting an OT network. Attackers can look for the configuration or confidential files.</li>
+<li id="cn-m20-253"><b>Legacy Protocols Exploitation</b>: many OT networks still rely on legacy protocols such as  Modbus, which attackers can exploit. After exploitation, they may gain access to administrative controls of the OT networks.</li>
+<li id="cn-m20-254"><b>Remote Attacks</b>: most OT networks work with minimal or weak authentication, allowing an attacker to break it and gain access to the OT network.</li>
+<li id="cn-m20-255"><b>DoS Attacks</b>: because OT systems are often directly connected to the internet, they may be prone to DoS attacks.</li>
+<li id="cn-m20-256"><b>Human-Machine Interface (HMI)-based Attacks</b>: most HMI applications are not secure enough and are not protected with Defense-in-Depth, making them vulnerable to several attacks, such as memory corruption, code injection, buffer overflow, and authentication attacks.</li>
+<li id="cn-m20-257"><b>Radio Frequency (RF) Attacks</b>: OT networks use RF to connect with various components. By default, RF technology has inherent vulnerabilities, making it easier for attackers to hack into a network and gain control. An attacker can conduct attacks such as replay, command injection, and malicious programming by injecting malware into the firmware.</li>
+<li id="cn-m20-258"><b>Spear Phishing</b>: attackers can use social engineering to perform spear-phishing attacks. Once malicious attachments are downloaded and clicked, attackers enter the OT network.</li>
+</ul>
+<h3 id="cn-m20-259"><b>OT Hacking Methodology and Tools</b></h3>
+<p id="cn-m20-260">OT hacking methodology is the same as the IoT hacking methodology. It follows the same steps:</p>
+<span class="atom-code hidden">85e70a3a-be86-4d5d-a6ad-96656b0e4f4a</span>
+<h3 id="cn-m20-263"><b>OT Countermeasures</b></h3>
+<p id="cn-m20-264">Due to threats and vulnerabilities present in an OT network, several countermeasures can be implemented. Key countermeasures include:</p>
+<ul id="cn-m20-265">
+<li id="cn-m20-265">There should be defense-in-depth to protect an OT network.</li>
+<li id="cn-m20-266">Since OT systems are publicly accessible, they should implement multi-factor authentication. Even if passwords are breached, the second factor can still protect a user’s account. However, an organization should also enforce strong and complex password policies to prevent users from using simple passwords.</li>
+<li id="cn-m20-267">Ingress and egress traffic is filtered using a firewall.</li>
+<li id="cn-m20-268">Remote connectivity should be enabled through VPN or SSH.</li>
+<li id="cn-m20-269">Device and system hardening practices should be implemented.</li>
+<li id="cn-m20-270">OT networks should be segregated with limited access to individuals. No one should be allowed access unless necessary.</li>
+<li id="cn-m20-271">A gateway should be implemented between IT and OT networks to filter traffic.</li>
+<li id="cn-m20-272">Default user credentials should be changed at implementation from devices and applications.</li>
+<li id="cn-m20-273">A regular risk assessment should be performed, and risk mitigation should be carefully implemented, keeping return-on-investment (ROI) in mind.</li>
+<li id="cn-m20-274">Patching policies should be implemented. After patches are installed, there should be an audit.</li>
+<li id="cn-m20-275">There should be regular vulnerability and penetration testing. Their results should be carefully reviewed and remediated.</li>
+<li id="cn-m20-276">Information in storage and transmission should be protected using encryption.</li>
+<li id="cn-m20-277">Strong wireless encryption protocols should be used.</li>
+</ul>
+<span class="atom-code hidden">e7877d3b-ca13-4b0b-b62b-ab0180647a0b</span>
+<span class="atom-code hidden">0bd6c551-0b76-4efc-8a1f-24307e3ed2e6</span>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m20-282"><b>Review</b></h2>
+<p id="cn-m20-283">Well done, you have completed the <b>Compromising IoT &amp; OT platforms </b>Practice Lab.</p>
+<span class="atom-code hidden">b6bdcc5f-bc75-41ea-b62a-7f6d843882b4</span>
+<span class="atom-code hidden">e89f065c-56b1-4bb7-8b42-5529d961af36</span>
+<span class="atom-code hidden">42eeeb2e-82d1-4796-b31a-6fc8bd66a909</span>
+<span class="atom-code hidden">e109dac2-3113-46d4-a645-5d67d4c2b39b</span>
+<span class="atom-code hidden">c6e0a3e7-1063-4090-9cb2-4fedabd10248</span>
+<span class="atom-code hidden">61279b46-adea-4852-b312-17168ab62080</span>
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+<h2 class="cn-summary"><b>Summary</b></h2>
+<p id="cn-m20-294">You completed the following exercises:</p>
+<ul id="cn-m20-295">
+<li id="cn-m20-295">Exercise 1 - IoT Concepts</li>
+<li id="cn-m20-296">Exercise 2 - IoT Device Exploitation and Prevention</li>
+<li id="cn-m20-297">Exercise 3 - OT Concepts, Attacks, and Countermeasures</li>
+</ul>
+<p id="cn-m20-298">You should now have further knowledge of:</p>
+<ul id="cn-m20-299">
+<li id="cn-m20-299">IoT Concepts</li>
+<li id="cn-m20-300">IoT Technology Components</li>
+<li id="cn-m20-301">IoT Architecture</li>
+<li id="cn-m20-302">IoT Use Cases</li>
+<li id="cn-m20-303">IoT Operating Systems</li>
+<li id="cn-m20-304">IoT Communication Models IoT Security Issues</li>
+<li id="cn-m20-305">OWASP Top 10 IoT Vulnerabilities</li>
+<li id="cn-m20-306">OWASP IoT Attack Surfaces</li>
+<li id="cn-m20-307">IoT Attacks</li>
+<li id="cn-m20-308">IoT Hacking Methodology and Tools</li>
+<li id="cn-m20-309">IoT Countermeasures Challenges of OT</li>
+<li id="cn-m20-310">OT Vulnerabilities</li>
+<li id="cn-m20-311">OT Attacks</li>
+<li id="cn-m20-312">OT Hacking Methodology and Tools</li>
+<li id="cn-m20-313">OT Countermeasures</li>
+</ul>
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+<span class="cn-alert" id="cn-m20-317">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

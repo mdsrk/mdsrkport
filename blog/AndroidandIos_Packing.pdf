@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://www.practice-labs.com/authenticated/vNext/vn-print-content.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="./AndroidandIos_Packing_files/print-styles.css" rel="stylesheet">
+    <script src="./AndroidandIos_Packing_files/jquery.min.js.download"></script>
+    <script src="./AndroidandIos_Packing_files/jspdf.js.download"></script>
+    <script src="./AndroidandIos_Packing_files/from_html.js.download"></script>
+    <script src="./AndroidandIos_Packing_files/addimage.js.download"></script>
+    <script src="./AndroidandIos_Packing_files/filesaver.js.download"></script>
+    <script src="./AndroidandIos_Packing_files/pl.js.download"></script>
+</head>
+<body>
+    <form method="post" action="https://www.practice-labs.com/authenticated/vNext/vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="XIy75D8vebQiyYt+wUHtcJKK+iBhgg37XaNEa3DwbtalW6FwhtJz7MSjhQHs5ewjF1GRXuMejrxU0kFITVqq3speocWxpczti276vOVM4TY=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>Practice Labs - Ethical Hacker v11</h1>
+                <h2>Compromising &amp; Exploiting Mobile Devices</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Hacking Android and iOS</li><li>Exercise 2 - Mobile Device Management (MDM)</li><li>Exercise 3 - Preventing Mobile Device Exploitation</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m19-0"><b>Introduction</b></h2>
+<div class="cn-metadata"><div>iOS</div>
+<div>Android</div>
+<div>Attack</div>
+<div>Malware</div>
+<div>Attack Tools</div>
+<div>Exploitation</div>
+</div>
+<span class="atom-code hidden">9beca326-b493-4b0e-b3dc-d7dfb77df3c9</span>
+<p id="cn-m19-9">Welcome to the <b>Compromising &amp; Exploiting Mobile Devices </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+<p id="cn-m19-13">In this module, you will complete the following exercises:</p>
+<ul id="cn-m19-14">
+<li id="cn-m19-14">Exercise 1 - Hacking Android and iOS</li>
+<li id="cn-m19-15">Exercise 2 - Mobile Device Management (MDM)</li>
+<li id="cn-m19-16">Exercise 3 - Preventing Mobile Device Exploitation</li>
+</ul>
+<p id="cn-m19-17">After completing this module, you will have further knowledge of:</p>
+<ul id="cn-m19-18">
+<li id="cn-m19-18">Mobile Platform Attack Vectors</li>
+<li id="cn-m19-19">Hacking Android OS</li>
+<li id="cn-m19-20">Mobile Platform Attack Vectors</li>
+<li id="cn-m19-21">Hacking Android OS</li>
+<li id="cn-m19-22">Jailbreaking and Rooting Mobile Devices</li>
+<li id="cn-m19-23">iOS Hacking Tools</li>
+<li id="cn-m19-24">Securing iOS Devices</li>
+<li id="cn-m19-25">Mobile Device Management</li>
+<li id="cn-m19-26">Mobile Security Guidelines and Tools</li>
+<li id="cn-m19-27">Application Management</li>
+<li id="cn-m19-28">Content Management</li>
+<li id="cn-m19-29">Remote Wipe</li>
+<li id="cn-m19-30">Geofencing</li>
+<li id="cn-m19-31">Geolocation</li>
+<li id="cn-m19-32">Screen Locks</li>
+<li id="cn-m19-33">Push Notifications</li>
+<li id="cn-m19-34">Passwords and Pins</li>
+<li id="cn-m19-35">Biometrics</li>
+<li id="cn-m19-36">Context-aware Authentication</li>
+<li id="cn-m19-37">Containerization</li>
+<li id="cn-m19-38">Storage Segmentation</li>
+<li id="cn-m19-39">Full Device Encryption</li>
+<li id="cn-m19-40">Mobile Security Guidelines</li>
+<li id="cn-m19-41">Mobile Security Tools</li>
+</ul>
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+<p id="cn-m19-43">It will take approximately <b>30 minutes </b>to complete this lab.</p>
+<span class="atom-code hidden">642d9b6c-5119-43ce-ae43-ef817a483854</span>
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+<p id="cn-m19-47">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+<span class="cn-alert" id="cn-m19-48">Click <b>Next </b>to view the Lab topology used in this module.</span>
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m19-50"><b>Lab Topology</b></h2>
+<p id="cn-m19-51">This module contains supporting materials for <b>Ethical Hacker v11</b>.</p>
+<span class="atom-code hidden">9282b519-cfa2-4f31-ada0-935ed1a8efec</span>
+<span class="cn-alert" id="cn-m19-54">Click <b>Next </b>to proceed to the first exercise.</span>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m19-55"><b>Exercise 1 - Hacking Android and iOS</b></h2>
+<p id="cn-m19-56">iOS is the mobile operating system used on Apple mobile devices, such as iPhones and iPads. There can be various design flaws in iOS or its applications, leading to various attacks. For example, some advanced users jailbreak iOS to get root access, potentially allowing an attacker to gain administrative control and modify the underlying iOS.</p>
+<p id="cn-m19-57">In this exercise, you will learn about hacking iOS.</p>
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+<p id="cn-m19-59">After completing this exercise, you will have further knowledge of:</p>
+<ul id="cn-m19-60">
+<li id="cn-m19-60">Mobile Platform Attack Vectors</li>
+<li id="cn-m19-61">Hacking Android OS</li>
+<li id="cn-m19-62">Jailbreaking and Rooting Mobile Devices</li>
+<li id="cn-m19-63">iOS Hacking Tools</li>
+<li id="cn-m19-64">Securing iOS Devices</li>
+</ul>
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+<p id="cn-m19-66">This exercise contains supporting materials for <b>Ethical Hacker v11</b>.</p>
+<span class="atom-code hidden">9282b519-cfa2-4f31-ada0-935ed1a8efec</span>
+<h3 id="cn-m19-69"><b>Mobile Platform Attack Vectors</b></h3>
+<p id="cn-m19-70">Mobile devices have become a common commodity for everyone in today’s environment. Most users have their mobile devices connected to the Internet, either through mobile data plans or through wireless connectivity. However, this increases the security threats for mobile devices. The attackers use various attack vectors to attack the mobile devices. The attackers look for financial and personal information or even use the mobile devices for other purposes, such as crypto mining or bots.</p>
+<p id="cn-m19-71">The attackers can use various types of attack vectors to gain control of the mobile devices or the information stored within them.</p>
+<p id="cn-m19-72">Some key attack vectors are:</p>
+<span class="atom-code hidden">064f98f4-1fd5-4ee0-a218-cf616ddfcf3e</span>
+<h3 id="cn-m19-75"><b>Hacking Android OS </b></h3>
+<p id="cn-m19-76">Android is widely used on all types of mobile devices. Various mobile device vendors use Android and re-brand it to release it under their brand. For example, OnePlus, which makes mobile phones, has re-branded Android under their brand known as OxygenOS.</p>
+<p id="cn-m19-77">Android has several vulnerabilities, which the attackers target to hack into like another operating system. There are different ways to hack into Android OS. For example, the attacker can root the device and modify the underlying kernel and system files.</p>
+<p id="cn-m19-78">An attacker can use various other tools to hack an Android device, such as the following:</p>
+<ul id="cn-m19-79">
+<li id="cn-m19-79"><b>NetCut </b>- Used to block wireless access on the mobile device</li>
+<li id="cn-m19-80"><b>Drozer </b>- Discovers vulnerabilities within a mobile device and is used to discover an attack surface</li>
+<li id="cn-m19-81"><b>Low Orbit Ion Cannon (LOIC) </b>- Used to perform DoS attacks</li>
+<li id="cn-m19-82"><b>DroidSheep </b>- Used to perform session hijacking attacks</li>
+<li id="cn-m19-83"><b>FaceNiff </b>- Used for sniffing and intercepting traffic over a wireless network</li>
+</ul>
+<h3 id="cn-m19-84"><b>Rooting</b></h3>
+<p id="cn-m19-85">A user can root the device and modify the underlying kernel and system files. When the attacker roots the Android device, it gives full administrative control to the user. A user can root the Android device using various tools, such as:</p>
+<ul id="cn-m19-86">
+<li id="cn-m19-86">KingoRoot</li>
+<li id="cn-m19-87">TunesGo Root Android Tool</li>
+<li id="cn-m19-88">One Click Root</li>
+<li id="cn-m19-89">Z4root</li>
+<li id="cn-m19-90">Towelroot</li>
+<li id="cn-m19-91">RootMaster</li>
+<li id="cn-m19-92">SuperSU Root</li>
+<li id="cn-m19-93">Root Genius</li>
+</ul>
+<h3 id="cn-m19-94"><b>Jailbreaking</b></h3>
+<p id="cn-m19-95">The iOS device users do not have administrative control or root access by default. They are regular users who can install/uninstall apps, run signed apps, and modify settings. However, a root user can perform other tasks, such as modifying the underlying system.</p>
+<p id="cn-m19-96">Jailbreaking is a method of modifying the underlying kernel by patching it with custom code. When a user modifies the kernel, the user gains administrative capabilities, allowing the user to run unsigned apps that are not available in the official Apple App Store. For example, a user has developed a malicious iOS app that he wants to test. When the user jailbreaks an iPhone, the user can execute the app, which without jailbreaking would not have been possible.</p>
+<p id="cn-m19-97">Even though some users perform jailbreaking for their benefit, it hampers the security of the iOS device. After jailbreaking an iOS device, the user may face performance deterioration and malware attacks.</p>
+<p id="cn-m19-98">Some of the applications that you can use for jailbreaking an iOS device are:</p>
+<ul id="cn-m19-99">
+<li id="cn-m19-99">Cydia</li>
+<li id="cn-m19-100">Hexxa Plus</li>
+<li id="cn-m19-101">Apricot</li>
+<li id="cn-m19-102">Yuxigon</li>
+<li id="cn-m19-103">Sileo</li>
+<li id="cn-m19-104">Trimgo</li>
+<li id="cn-m19-105">Bregxi</li>
+<li id="cn-m19-106">Yalu</li>
+</ul>
+<h3 id="cn-m19-107"><b>iOS Hacking Tools</b></h3>
+<p id="cn-m19-108">Several iOS hacking tools are available. Some of the key tools are:</p>
+<h4 id="cn-m19-109"><b><i>Malware</i></b></h4>
+<p id="cn-m19-110">Malware is malicious software designed to perform an illegitimate task or activity. For example, malware may be created to steal information or simply cause performance issues. There are several iOS-specific malware that exists. Some of the key ones are:</p>
+<ul id="cn-m19-111">
+<li id="cn-m19-111">Clicker Trojan Malware</li>
+<li id="cn-m19-112">Trident Malware</li>
+<li id="cn-m19-113">Exodus</li>
+<li id="cn-m19-114">Checkrain</li>
+<li id="cn-m19-115">AceDeceiver Trojan</li>
+<li id="cn-m19-116">XcodeGhost</li>
+<li id="cn-m19-117">KeyRaider</li>
+<li id="cn-m19-118">Pegasus</li>
+</ul>
+<h4 id="cn-m19-119"><b><i>Hacking Tools</i></b></h4>
+<p id="cn-m19-120">Other than using malware as a tool, some applications are available to hack iOS devices. Some of the key applications are:</p>
+<ul id="cn-m19-121">
+<li id="cn-m19-121">Spyzie</li>
+<li id="cn-m19-122">Network Analyzer Pro</li>
+<li id="cn-m19-123">Elcomsoft Phone Breaker</li>
+<li id="cn-m19-124">Fing</li>
+<li id="cn-m19-125">Network Analyzer Master</li>
+<li id="cn-m19-126">Spyic</li>
+<li id="cn-m19-127">iWebPRO</li>
+<li id="cn-m19-128">Frida</li>
+<li id="cn-m19-129">iOS Reverse Engineering Toolkit (iRET)</li>
+<li id="cn-m19-130">netKillUIbeta</li>
+<li id="cn-m19-131">Myriam iOS Security App</li>
+<li id="cn-m19-132">iSpy</li>
+<li id="cn-m19-133">Cycript</li>
+<li id="cn-m19-134">Paraben DS</li>
+<li id="cn-m19-135">Firecat</li>
+<li id="cn-m19-136">Highster Mobile</li>
+</ul>
+<h3 id="cn-m19-137"><b>Securing iOS Devices</b></h3>
+<p id="cn-m19-138">You can use various methods to secure iOS devices. Here are some methods that you can use:</p>
+<ul id="cn-m19-139">
+<li id="cn-m19-139">Lock your phone with a password or PIN</li>
+<li id="cn-m19-140">Avoid downloading apps from any untrusted store. Use only Apple App Store to download applications</li>
+<li id="cn-m19-141">Avoid storing data on the local device</li>
+<li id="cn-m19-142">Avoid adding add-ons in a Web browser</li>
+<li id="cn-m19-143">Do NOT jailbreak the iOS device</li>
+<li id="cn-m19-144">Install and configure Vault app to store and hide confidential and critical data</li>
+<li id="cn-m19-145">Use VPN to encrypt your traffic</li>
+<li id="cn-m19-146">Always use two-factor authentication</li>
+<li id="cn-m19-147">Avoid connecting the iOS device to open public wireless networks</li>
+<li id="cn-m19-148">Disable Bluetooth and wireless when not in use</li>
+<li id="cn-m19-149">Enable the Reset Keyboard Dictionary feature to delete the keyboard cache</li>
+<li id="cn-m19-150">Enable the Erase Data feature to erase data from iPhone after 10 wrong attempts to unlock it</li>
+<li id="cn-m19-151">Always keep the iOS device updated</li>
+<li id="cn-m19-152">Avoid clicking on any link in a message or email from an unknown sender</li>
+</ul>
+<span class="atom-code hidden">e7877d3b-ca13-4b0b-b62b-ab0180647a0b</span>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m19-156"><b>Exercise 2 - Mobile Device Management (MDM)</b></h2>
+<p id="cn-m19-157">Most organizations now allow the use of mobile phones to share their data. However, there is always a risk of stolen data or compromised mobile phones. However, mobility has become a necessity for many people, and therefore, organizations often use different methods to allow the use of mobile phones.</p>
+<p id="cn-m19-158">It can be difficult to manage the devices. This is where Mobile Device Management (MDM) comes in. MDM is a feature used in an enterprise network to secure a mobile device environment. MDM can control, configure, update, and secure remote mobile devices.</p>
+<p id="cn-m19-159">Using MDM, you can block rooting, jailbreaking, or any other feature you do not want the employees to use. MDM also allows you to restrict the use of any application other than the approved applications from your app store.</p>
+<p id="cn-m19-160">MDM can enable geofencing, alerting the administrator if a user leaves the defined perimeter. Alongside this, you can also configure asset tracking. Even if the SIM is changed, you will locate the device.</p>
+<p id="cn-m19-161">An organization should also use the following methods when using MDM:</p>
+<ul id="cn-m19-162">
+<li id="cn-m19-162">Enable the Remote Location feature.</li>
+<li id="cn-m19-163">Enable the Remote Wipe feature.</li>
+<li id="cn-m19-164">Enable encryption.</li>
+<li id="cn-m19-165">Allow installation of apps from your organization’s app store.</li>
+<li id="cn-m19-166">Allow specific apps to be installed using blocklisting and whitelisting.</li>
+<li id="cn-m19-167">Use password enforcement.</li>
+<li id="cn-m19-168">Perform device inventory and management.</li>
+</ul>
+<p id="cn-m19-169">In this exercise, you should learn about mobile security solutions.</p>
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+<p id="cn-m19-171">After completing this exercise, you should have further knowledge of:</p>
+<ul id="cn-m19-172">
+<li id="cn-m19-172">Application Management</li>
+<li id="cn-m19-173">Content Management</li>
+<li id="cn-m19-174">Remote Wipe</li>
+<li id="cn-m19-175">Geofencing</li>
+<li id="cn-m19-176">Geolocation</li>
+<li id="cn-m19-177">Screen Locks</li>
+<li id="cn-m19-178">Push Notifications</li>
+<li id="cn-m19-179">Passwords and Pins</li>
+<li id="cn-m19-180">Biometrics</li>
+<li id="cn-m19-181">Context-aware Authentication</li>
+<li id="cn-m19-182">Containerization</li>
+<li id="cn-m19-183">Storage Segmentation</li>
+<li id="cn-m19-184">Full Device Encryption</li>
+</ul>
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+<p id="cn-m19-186">This exercise contains supporting materials for <b>Ethical Hacker v11</b>.</p>
+<span class="atom-code hidden">9282b519-cfa2-4f31-ada0-935ed1a8efec</span>
+<span class="atom-code hidden">4ca5302f-6892-45eb-ba66-7f1033b7159f</span>
+<span class="atom-code hidden">e7877d3b-ca13-4b0b-b62b-ab0180647a0b</span>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m19-193"><b>Exercise 3 - Preventing Mobile Device Exploitation</b></h2>
+<p id="cn-m19-194">Mobile devices are widely used for personal and official reasons. A device for personal use could have personal data at risk, while a device for official uses could put the organization’s data at risk. No matter the purpose of the device, its security is important. A user needs to ensure that the mobile device is safe and not hacked, stolen, or otherwise compromised. In this exercise, you will learn about some common methods to prevent mobile device exploitation.</p>
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+<p id="cn-m19-196">After completing this exercise, you will have further knowledge of:</p>
+<ul id="cn-m19-197">
+<li id="cn-m19-197">Mobile Security Guidelines</li>
+<li id="cn-m19-198">Mobile Security Tools</li>
+</ul>
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+<p id="cn-m19-200">This exercise contains supporting materials for <b>Ethical Hacker v11</b>.</p>
+<span class="atom-code hidden">9282b519-cfa2-4f31-ada0-935ed1a8efec</span>
+<h3 id="cn-m19-203"><b>Mobile Security Guidelines </b></h3>
+<p id="cn-m19-204">Certain methods should be implemented to prevent the misuse of mobile devices, whether they are used for personal or official purposes.</p>
+<p id="cn-m19-205">Here is a list of methods that you can use to protect mobile devices:</p>
+<ul id="cn-m19-206">
+<li id="cn-m19-206">Disable services like Wi-Fi and Bluetooth when not required</li>
+<li id="cn-m19-207">Enable GPS only when required</li>
+<li id="cn-m19-208">Do not jailbreak or root the phone</li>
+<li id="cn-m19-209">Perform regular backups</li>
+<li id="cn-m19-210">Perform regular updates on the mobile device</li>
+<li id="cn-m19-211">Restrict access to the device using an authentication method, such as a PIN, or fingerprint scan</li>
+<li id="cn-m19-212">Avoid connecting to open networks</li>
+<li id="cn-m19-213">Install applications from the trusted app stores only</li>
+<li id="cn-m19-214">Encrypt the mobile device</li>
+<li id="cn-m19-215">Scan every app being installed</li>
+<li id="cn-m19-216">Avoid saving passwords on the mobile device</li>
+<li id="cn-m19-217">Avoid clicking URLs received in a spam</li>
+<li id="cn-m19-218">Use screen locks with password or PIN</li>
+</ul>
+<p id="cn-m19-219" class="cn-wdTeal"><b><i>Developers</i></b></p>
+<p id="cn-m19-220">Developers must use caution while developing mobile app code. They should follow the key guidelines below:</p>
+<ul id="cn-m19-221">
+<li id="cn-m19-221">Follow proper code development guidelines</li>
+<li id="cn-m19-222">Ensure proper data storage using encryption</li>
+<li id="cn-m19-223">Use SSL/TLS for data in transit</li>
+<li id="cn-m19-224">Prohibit the use of self-signing certificates and use trusted ones</li>
+<li id="cn-m19-225">Use online authentication whenever possible</li>
+<li id="cn-m19-226">Process authentication information on the server-side</li>
+<li id="cn-m19-227">Perform code integrity checks on the app on the mobile device</li>
+<li id="cn-m19-228">Use strong cryptography</li>
+<li id="cn-m19-229">Perform user permission checks on the server-side</li>
+<li id="cn-m19-230">Use code standards to create consistent codes and avoid vulnerabilities</li>
+<li id="cn-m19-231">Perform a thorough test of the mobile code</li>
+<li id="cn-m19-232">Use anti-tampering techniques</li>
+<li id="cn-m19-233">Use root and jailbreak detection methods</li>
+</ul>
+<p id="cn-m19-234">Obfuscate the code to avoid reverse engineering</p>
+<h4 id="cn-m19-235"><b><i>Administrators</i></b></h4>
+<p id="cn-m19-236">The administrators need to control mobile usage within an enterprise environment. The administrators should perform the following tasks:</p>
+<ul id="cn-m19-237">
+<li id="cn-m19-237">Create and implement a mobile device policy</li>
+<li id="cn-m19-238">Install and implement MDM to control the mobile devices</li>
+<li id="cn-m19-239">Configure policies to secure the enterprise data on mobile devices</li>
+<li id="cn-m19-240">Configure two-factor authentication</li>
+<li id="cn-m19-241">Configure an app store to limit the apps to be used</li>
+<li id="cn-m19-242">Monitor the security across all mobile devices continuously</li>
+<li id="cn-m19-243">Keep all mobile devices and apps updated with the latest updates</li>
+<li id="cn-m19-244">Secure all mobiles devices with the latest anti-malware</li>
+</ul>
+<h3 id="cn-m19-245"><b>Mobile Security Tools</b></h3>
+<p id="cn-m19-246">A user can use various mobile tools to increase the security of mobile devices. Some of the key tools are:</p>
+<ul id="cn-m19-247">
+<li id="cn-m19-247"><b>Lookout Personal</b>: Used for identity and theft protection</li>
+<li id="cn-m19-248"><b>Zimperium’s zIPS</b>: Works as an Intrusion Prevention System (IPS) in the mobile devices</li>
+<li id="cn-m19-249"><b>BullGuard Mobile Security</b>: Used for malware protection and remote wipe</li>
+<li id="cn-m19-250"><b>Bitdefender Mobile Security &amp; Antivirus</b>: Works as an antivirus</li>
+<li id="cn-m19-251"><b>Malwarebytes for Android</b>: Works as an anti-spyware application</li>
+</ul>
+<p id="cn-m19-252">Most anti-malware vendors also have mobile versions to help users protect their devices.</p>
+<span class="atom-code hidden">e7877d3b-ca13-4b0b-b62b-ab0180647a0b</span>
+<span class="atom-code hidden">0bd6c551-0b76-4efc-8a1f-24307e3ed2e6</span>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m19-256"><b>Review</b></h2>
+<p id="cn-m19-257">Well done, you have completed the <b>Compromising &amp; Exploiting Mobile Devices </b>Practice Lab.</p>
+<span class="atom-code hidden">b6bdcc5f-bc75-41ea-b62a-7f6d843882b4</span>
+<span class="atom-code hidden">7c6f7ba0-3310-4c36-ba45-dc4f19e36ade</span>
+<span class="atom-code hidden">090320e8-91bc-43d2-b60a-cb7ce03b56f7</span>
+<span class="atom-code hidden">aa1ebfc3-0e07-42c2-b225-d724e2f86c3f</span>
+<span class="atom-code hidden">74a2b257-05d3-48fe-bfeb-d2cbb8cc3a51</span>
+<span class="atom-code hidden">28276bb5-9e58-43f5-91fc-fc99f40b5c09</span>
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+<h2 class="cn-summary"><b>Summary</b></h2>
+<p id="cn-m19-268">You completed the following exercises:</p>
+<ul id="cn-m19-269">
+<li id="cn-m19-269">Exercise 1 - Hacking Android and iOS</li>
+<li id="cn-m19-270">Exercise 2 - Mobile Device Management (MDM)</li>
+<li id="cn-m19-271">Exercise 3 - Preventing Mobile Device Exploitation</li>
+</ul>
+<p id="cn-m19-272">You should now have a further knowledge of:</p>
+<ul id="cn-m19-273">
+<li id="cn-m19-273">Mobile Platform Attack Vectors</li>
+<li id="cn-m19-274">Hacking Android OS</li>
+<li id="cn-m19-275">Mobile Platform Attack Vectors</li>
+<li id="cn-m19-276">Hacking Android OS</li>
+<li id="cn-m19-277">Jailbreaking and Rooting Mobile Devices</li>
+<li id="cn-m19-278">iOS Hacking Tools</li>
+<li id="cn-m19-279">Securing iOS Devices</li>
+<li id="cn-m19-280">Mobile Device Management</li>
+<li id="cn-m19-281">Mobile Security Guidelines and Tools</li>
+<li id="cn-m19-282">Application Management</li>
+<li id="cn-m19-283">Content Management</li>
+<li id="cn-m19-284">Remote Wipe</li>
+<li id="cn-m19-285">Geofencing</li>
+<li id="cn-m19-286">Geolocation</li>
+<li id="cn-m19-287">Screen Locks</li>
+<li id="cn-m19-288">Push Notifications</li>
+<li id="cn-m19-289">Passwords and Pins</li>
+<li id="cn-m19-290">Biometrics</li>
+<li id="cn-m19-291">Context-aware Authentication</li>
+<li id="cn-m19-292">Containerization</li>
+<li id="cn-m19-293">Storage Segmentation</li>
+<li id="cn-m19-294">Full Device Encryption</li>
+<li id="cn-m19-295">Mobile Security Guidelines</li>
+<li id="cn-m19-296">Mobile Security Tools</li>
+</ul>
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+<span class="cn-alert" id="cn-m19-300">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
